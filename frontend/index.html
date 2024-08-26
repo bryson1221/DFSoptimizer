@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Data</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <input type="file" id="fileInput" accept=".csv"/>
+    <table id="myTable" border="1">
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Name + ID</th>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Roster Position</th>
+                <th>Salary</th>
+                <th>Game Info</th>
+                <th>Team</th>
+                <th>Avg Points Per Game</th>
+            </tr>
+            <tr>
+                <th><input type="text" placeholder="Search Position" /></th>
+                <th><input type="text" placeholder="Search Name + ID" /></th>
+                <th><input type="text" placeholder="Search Name" /></th>
+                <th><input type="text" placeholder="Search ID" /></th>
+                <th><input type="text" placeholder="Search Roster Position" /></th>
+                <th><input type="text" placeholder="Search Salary" /></th>
+                <th><input type="text" placeholder="Search Game Info" /></th>
+                <th><input type="text" placeholder="Search Team" /></th>
+                <th><input type="text" placeholder="Search Avg Points" /></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table body filled dynamically by CSV data -->
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            const table = $('#myTable').DataTable();
+
+            // Handle the file input
+            $('#fileInput').on('change', function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const csvData = e.target.result.split('\n').slice(1); // Skip the header
+                        csvData.forEach(line => {
+                            const row = line.split(',').map(cell => cell.trim());
+                            
+                            // Ensuring we have exactly 9 columns
+                            while (row.length < 9) {
+                                row.push('');
+                            }
+
+                            if (row.filter(cell => cell).length > 0) {
+                                table.row.add(row).draw();
+                            }
+                        });
+                    };
+                    reader.readAsText(file);
+                }
+            });
+
+            // Apply column-specific filtering
+            $('#myTable thead tr:eq(1) th input').each(function(index) {
+                $(this).on('keyup change', function() {
+                    if (table.column(index).search() !== this.value) {
+                        table
+                            .column(index)
+                            .search(this.value)
+                            .draw();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

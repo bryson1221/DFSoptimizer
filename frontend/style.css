@@ -1,0 +1,21 @@
+/* styles.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    cursor: pointer; /* Indicate that headers are clickable */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight rows on hover */
+}

@@ -1,0 +1,7862 @@
+<html>
+<head>
+<title>CSV to HTML Table</title>
+<style>
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid black; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<h1>Player Data</h1>
+<table>
+<thead>
+<tr>
+    <th>Position</th>
+    <th>Name + ID</th>
+    <th>Name</th>
+    <th>ID</th>
+    <th>Roster Position</th>
+    <th>Salary</th>
+    <th>Game Info</th>
+    <th>Team</th>
+    <th>AvgPointsPerGame</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>WR</td>
+    <td>CeeDee Lamb (35214053)</td>
+    <td>CeeDee Lamb</td>
+    <td>35214053</td>
+    <td>WR/FLEX</td>
+    <td>8900</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>25.15</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tyreek Hill (35214055)</td>
+    <td>Tyreek Hill</td>
+    <td>35214055</td>
+    <td>WR/FLEX</td>
+    <td>8700</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>24.62</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Justin Jefferson (35214057)</td>
+    <td>Justin Jefferson</td>
+    <td>35214057</td>
+    <td>WR/FLEX</td>
+    <td>8400</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>21.82</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Josh Allen (35213646)</td>
+    <td>Josh Allen</td>
+    <td>35213646</td>
+    <td>QB</td>
+    <td>8000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>25.99</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ja'Marr Chase (35214059)</td>
+    <td>Ja'Marr Chase</td>
+    <td>35214059</td>
+    <td>WR/FLEX</td>
+    <td>7800</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>17.36</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jonathan Taylor (35213735)</td>
+    <td>Jonathan Taylor</td>
+    <td>35213735</td>
+    <td>RB/FLEX</td>
+    <td>7800</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>15.94</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Bijan Robinson (35213737)</td>
+    <td>Bijan Robinson</td>
+    <td>35213737</td>
+    <td>RB/FLEX</td>
+    <td>7700</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>15.19</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Davante Adams (35214061)</td>
+    <td>Davante Adams</td>
+    <td>35214061</td>
+    <td>WR/FLEX</td>
+    <td>7600</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>16.14</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>C.J. Stroud (35213647)</td>
+    <td>C.J. Stroud</td>
+    <td>35213647</td>
+    <td>QB</td>
+    <td>7500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>19.65</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Mike Evans (35214063)</td>
+    <td>Mike Evans</td>
+    <td>35214063</td>
+    <td>WR/FLEX</td>
+    <td>7300</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>17.42</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Marvin Harrison Jr. (35214065)</td>
+    <td>Marvin Harrison Jr.</td>
+    <td>35214065</td>
+    <td>WR/FLEX</td>
+    <td>7200</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Travis Etienne Jr. (35213739)</td>
+    <td>Travis Etienne Jr.</td>
+    <td>35213739</td>
+    <td>RB/FLEX</td>
+    <td>7200</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>16.96</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Dak Prescott (35213648)</td>
+    <td>Dak Prescott</td>
+    <td>35213648</td>
+    <td>QB</td>
+    <td>7100</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>22.47</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Nico Collins (35214067)</td>
+    <td>Nico Collins</td>
+    <td>35214067</td>
+    <td>WR/FLEX</td>
+    <td>7000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>18.19</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Tua Tagovailoa (35213649)</td>
+    <td>Tua Tagovailoa</td>
+    <td>35213649</td>
+    <td>QB</td>
+    <td>7000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>17.66</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>James Cook (35213741)</td>
+    <td>James Cook</td>
+    <td>35213741</td>
+    <td>RB/FLEX</td>
+    <td>6900</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>14.12</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Keenan Allen (35214069)</td>
+    <td>Keenan Allen</td>
+    <td>35214069</td>
+    <td>WR/FLEX</td>
+    <td>6900</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>22.68</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Michael Pittman Jr. (35214071)</td>
+    <td>Michael Pittman Jr.</td>
+    <td>35214071</td>
+    <td>WR/FLEX</td>
+    <td>6800</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>16.26</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>De'Von Achane (35213743)</td>
+    <td>De'Von Achane</td>
+    <td>35213743</td>
+    <td>RB/FLEX</td>
+    <td>6800</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>17.48</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Stefon Diggs (35214073)</td>
+    <td>Stefon Diggs</td>
+    <td>35214073</td>
+    <td>WR/FLEX</td>
+    <td>6700</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>16.2</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Alvin Kamara (35213745)</td>
+    <td>Alvin Kamara</td>
+    <td>35213745</td>
+    <td>RB/FLEX</td>
+    <td>6700</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>17.92</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Joe Mixon (35213747)</td>
+    <td>Joe Mixon</td>
+    <td>35213747</td>
+    <td>RB/FLEX</td>
+    <td>6600</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>15.88</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Chris Olave (35214075)</td>
+    <td>Chris Olave</td>
+    <td>35214075</td>
+    <td>WR/FLEX</td>
+    <td>6600</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>15.39</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>DJ Moore (35214077)</td>
+    <td>DJ Moore</td>
+    <td>35214077</td>
+    <td>WR/FLEX</td>
+    <td>6500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>17.79</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Joe Burrow (35213650)</td>
+    <td>Joe Burrow</td>
+    <td>35213650</td>
+    <td>QB</td>
+    <td>6500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>16.32</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Aaron Jones (35213749)</td>
+    <td>Aaron Jones</td>
+    <td>35213749</td>
+    <td>RB/FLEX</td>
+    <td>6500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>15.35</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Amari Cooper (35214079)</td>
+    <td>Amari Cooper</td>
+    <td>35214079</td>
+    <td>WR/FLEX</td>
+    <td>6400</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>15.81</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Kyler Murray (35213651)</td>
+    <td>Kyler Murray</td>
+    <td>35213651</td>
+    <td>QB</td>
+    <td>6400</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>18.92</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Raheem Mostert (35213751)</td>
+    <td>Raheem Mostert</td>
+    <td>35213751</td>
+    <td>RB/FLEX</td>
+    <td>6400</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>17.42</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Anthony Richardson (35213652)</td>
+    <td>Anthony Richardson</td>
+    <td>35213652</td>
+    <td>QB</td>
+    <td>6300</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>18.67</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jaylen Waddle (35214081)</td>
+    <td>Jaylen Waddle</td>
+    <td>35214081</td>
+    <td>WR/FLEX</td>
+    <td>6300</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>14.24</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Rachaad White (35213753)</td>
+    <td>Rachaad White</td>
+    <td>35213753</td>
+    <td>RB/FLEX</td>
+    <td>6300</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>15.97</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>James Conner (35213755)</td>
+    <td>James Conner</td>
+    <td>35213755</td>
+    <td>RB/FLEX</td>
+    <td>6200</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>16.42</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Trevor Lawrence (35213653)</td>
+    <td>Trevor Lawrence</td>
+    <td>35213653</td>
+    <td>QB</td>
+    <td>6200</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>18.1</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>DK Metcalf (35214083)</td>
+    <td>DK Metcalf</td>
+    <td>35214083</td>
+    <td>WR/FLEX</td>
+    <td>6200</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>14.65</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Kirk Cousins (35213654)</td>
+    <td>Kirk Cousins</td>
+    <td>35213654</td>
+    <td>QB</td>
+    <td>6100</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>21.34</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Trey McBride (35214635)</td>
+    <td>Trey McBride</td>
+    <td>35214635</td>
+    <td>TE/FLEX</td>
+    <td>6100</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>11.03</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tee Higgins (35214085)</td>
+    <td>Tee Higgins</td>
+    <td>35214085</td>
+    <td>WR/FLEX</td>
+    <td>6100</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>11.97</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Kenneth Walker III (35213757)</td>
+    <td>Kenneth Walker III</td>
+    <td>35213757</td>
+    <td>RB/FLEX</td>
+    <td>6100</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>13.49</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Deshaun Watson (35213655)</td>
+    <td>Deshaun Watson</td>
+    <td>35213655</td>
+    <td>QB</td>
+    <td>6000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>15.47</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Drake London (35214087)</td>
+    <td>Drake London</td>
+    <td>35214087</td>
+    <td>WR/FLEX</td>
+    <td>6000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>11.27</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>D'Andre Swift (35213761)</td>
+    <td>D'Andre Swift</td>
+    <td>35213761</td>
+    <td>RB/FLEX</td>
+    <td>6000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>12.76</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Austin Ekeler (35213759)</td>
+    <td>Austin Ekeler</td>
+    <td>35213759</td>
+    <td>RB/FLEX</td>
+    <td>6000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>13.74</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Caleb Williams (35213656)</td>
+    <td>Caleb Williams</td>
+    <td>35213656</td>
+    <td>QB</td>
+    <td>5900</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Tony Pollard (35213765)</td>
+    <td>Tony Pollard</td>
+    <td>35213765</td>
+    <td>RB/FLEX</td>
+    <td>5900</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>13.78</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Rhamondre Stevenson (35213763)</td>
+    <td>Rhamondre Stevenson</td>
+    <td>35213763</td>
+    <td>RB/FLEX</td>
+    <td>5900</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>12.22</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Malik Nabers (35214089)</td>
+    <td>Malik Nabers</td>
+    <td>35214089</td>
+    <td>WR/FLEX</td>
+    <td>5900</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>T.J. Hockenson (35214637)</td>
+    <td>T.J. Hockenson</td>
+    <td>35214637</td>
+    <td>TE/FLEX</td>
+    <td>5900</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>14.87</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Ezekiel Elliott (35213769)</td>
+    <td>Ezekiel Elliott</td>
+    <td>35213769</td>
+    <td>RB/FLEX</td>
+    <td>5800</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>10.32</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Dalton Kincaid (35214639)</td>
+    <td>Dalton Kincaid</td>
+    <td>35214639</td>
+    <td>TE/FLEX</td>
+    <td>5800</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>9.76</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Calvin Ridley (35214093)</td>
+    <td>Calvin Ridley</td>
+    <td>35214093</td>
+    <td>WR/FLEX</td>
+    <td>5800</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>14.23</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Zack Moss (35213767)</td>
+    <td>Zack Moss</td>
+    <td>35213767</td>
+    <td>RB/FLEX</td>
+    <td>5800</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>12.54</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Justin Herbert (35213657)</td>
+    <td>Justin Herbert</td>
+    <td>35213657</td>
+    <td>QB</td>
+    <td>5800</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>19.32</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Chris Godwin (35214091)</td>
+    <td>Chris Godwin</td>
+    <td>35214091</td>
+    <td>WR/FLEX</td>
+    <td>5800</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>12.51</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>George Pickens (35214097)</td>
+    <td>George Pickens</td>
+    <td>35214097</td>
+    <td>WR/FLEX</td>
+    <td>5700</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>13.02</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>DeAndre Hopkins (35214095)</td>
+    <td>DeAndre Hopkins</td>
+    <td>35214095</td>
+    <td>WR/FLEX</td>
+    <td>5700</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>13.68</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Devin Singletary (35213773)</td>
+    <td>Devin Singletary</td>
+    <td>35213773</td>
+    <td>RB/FLEX</td>
+    <td>5700</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>10.76</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Zamir White (35213771)</td>
+    <td>Zamir White</td>
+    <td>35213771</td>
+    <td>RB/FLEX</td>
+    <td>5700</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>4.76</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jayden Daniels (35213658)</td>
+    <td>Jayden Daniels</td>
+    <td>35213658</td>
+    <td>QB</td>
+    <td>5700</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>David Njoku (35214641)</td>
+    <td>David Njoku</td>
+    <td>35214641</td>
+    <td>TE/FLEX</td>
+    <td>5600</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>13.26</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Najee Harris (35213775)</td>
+    <td>Najee Harris</td>
+    <td>35213775</td>
+    <td>RB/FLEX</td>
+    <td>5600</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>11.65</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jaylen Warren (35213777)</td>
+    <td>Jaylen Warren</td>
+    <td>35213777</td>
+    <td>RB/FLEX</td>
+    <td>5600</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>11.77</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Courtland Sutton (35214101)</td>
+    <td>Courtland Sutton</td>
+    <td>35214101</td>
+    <td>WR/FLEX</td>
+    <td>5600</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>12.08</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Baker Mayfield (35213659)</td>
+    <td>Baker Mayfield</td>
+    <td>35213659</td>
+    <td>QB</td>
+    <td>5600</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>18.66</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Terry McLaurin (35214099)</td>
+    <td>Terry McLaurin</td>
+    <td>35214099</td>
+    <td>WR/FLEX</td>
+    <td>5600</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>12.48</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jerome Ford (35213783)</td>
+    <td>Jerome Ford</td>
+    <td>35213783</td>
+    <td>RB/FLEX</td>
+    <td>5500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>12.52</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tank Dell (35214105)</td>
+    <td>Tank Dell</td>
+    <td>35214105</td>
+    <td>WR/FLEX</td>
+    <td>5500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>15.82</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Christian Kirk (35214103)</td>
+    <td>Christian Kirk</td>
+    <td>35214103</td>
+    <td>WR/FLEX</td>
+    <td>5500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>13.19</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Evan Engram (35214643)</td>
+    <td>Evan Engram</td>
+    <td>35214643</td>
+    <td>TE/FLEX</td>
+    <td>5500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>13.66</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Geno Smith (35213660)</td>
+    <td>Geno Smith</td>
+    <td>35213660</td>
+    <td>QB</td>
+    <td>5500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>16.74</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Zach Charbonnet (35213779)</td>
+    <td>Zach Charbonnet</td>
+    <td>35213779</td>
+    <td>RB/FLEX</td>
+    <td>5500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>6.63</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Javonte Williams (35213781)</td>
+    <td>Javonte Williams</td>
+    <td>35213781</td>
+    <td>RB/FLEX</td>
+    <td>5500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>11.26</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Nick Chubb (35213787)</td>
+    <td>Nick Chubb</td>
+    <td>35213787</td>
+    <td>RB/FLEX</td>
+    <td>5400</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>13.05</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Brandin Cooks (35214107)</td>
+    <td>Brandin Cooks</td>
+    <td>35214107</td>
+    <td>WR/FLEX</td>
+    <td>5400</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>11.03</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Russell Wilson (35213662)</td>
+    <td>Russell Wilson</td>
+    <td>35213662</td>
+    <td>QB</td>
+    <td>5400</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>18.39</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Daniel Jones (35213661)</td>
+    <td>Daniel Jones</td>
+    <td>35213661</td>
+    <td>QB</td>
+    <td>5400</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>11.16</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Ty Chandler (35213785)</td>
+    <td>Ty Chandler</td>
+    <td>35213785</td>
+    <td>RB/FLEX</td>
+    <td>5400</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>6.12</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tyler Lockett (35214109)</td>
+    <td>Tyler Lockett</td>
+    <td>35214109</td>
+    <td>WR/FLEX</td>
+    <td>5400</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>11.91</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Will Levis (35213666)</td>
+    <td>Will Levis</td>
+    <td>35213666</td>
+    <td>QB</td>
+    <td>5300</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>12.56</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Derek Carr (35213665)</td>
+    <td>Derek Carr</td>
+    <td>35213665</td>
+    <td>QB</td>
+    <td>5300</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>15.89</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Chuba Hubbard (35213791)</td>
+    <td>Chuba Hubbard</td>
+    <td>35213791</td>
+    <td>RB/FLEX</td>
+    <td>5300</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>10.91</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jonathon Brooks (35213793)</td>
+    <td>Jonathon Brooks</td>
+    <td>35213793</td>
+    <td>RB/FLEX</td>
+    <td>5300</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Diontae Johnson (35214113)</td>
+    <td>Diontae Johnson</td>
+    <td>35214113</td>
+    <td>WR/FLEX</td>
+    <td>5300</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>11.96</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jordan Addison (35214111)</td>
+    <td>Jordan Addison</td>
+    <td>35214111</td>
+    <td>WR/FLEX</td>
+    <td>5300</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>13.37</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Aidan O'Connell (35213663)</td>
+    <td>Aidan O'Connell</td>
+    <td>35213663</td>
+    <td>QB</td>
+    <td>5300</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>12.26</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Gardner Minshew II (35213664)</td>
+    <td>Gardner Minshew II</td>
+    <td>35213664</td>
+    <td>QB</td>
+    <td>5300</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>12.89</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Gus Edwards (35213789)</td>
+    <td>Gus Edwards</td>
+    <td>35213789</td>
+    <td>RB/FLEX</td>
+    <td>5300</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>10.45</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jake Ferguson (35214645)</td>
+    <td>Jake Ferguson</td>
+    <td>35214645</td>
+    <td>TE/FLEX</td>
+    <td>5200</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>11.91</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Khalil Herbert (35213797)</td>
+    <td>Khalil Herbert</td>
+    <td>35213797</td>
+    <td>RB/FLEX</td>
+    <td>5200</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>10.21</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Bryce Young (35213669)</td>
+    <td>Bryce Young</td>
+    <td>35213669</td>
+    <td>QB</td>
+    <td>5200</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>10.96</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Adam Thielen (35214115)</td>
+    <td>Adam Thielen</td>
+    <td>35214115</td>
+    <td>WR/FLEX</td>
+    <td>5200</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>14.12</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Sam Darnold (35213667)</td>
+    <td>Sam Darnold</td>
+    <td>35213667</td>
+    <td>QB</td>
+    <td>5200</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>2.54</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>J.J. McCarthy (35213668)</td>
+    <td>J.J. McCarthy</td>
+    <td>35213668</td>
+    <td>QB</td>
+    <td>5200</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Joshua Palmer (35214117)</td>
+    <td>Joshua Palmer</td>
+    <td>35214117</td>
+    <td>WR/FLEX</td>
+    <td>5200</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>11.37</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Brian Robinson Jr. (35213795)</td>
+    <td>Brian Robinson Jr.</td>
+    <td>35213795</td>
+    <td>RB/FLEX</td>
+    <td>5200</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>13.53</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jerry Jeudy (35214119)</td>
+    <td>Jerry Jeudy</td>
+    <td>35214119</td>
+    <td>WR/FLEX</td>
+    <td>5100</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>8.86</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Trey Benson (35213801)</td>
+    <td>Trey Benson</td>
+    <td>35213801</td>
+    <td>RB/FLEX</td>
+    <td>5100</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Khalil Shakir (35214121)</td>
+    <td>Khalil Shakir</td>
+    <td>35214121</td>
+    <td>WR/FLEX</td>
+    <td>5100</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>7.82</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Tyjae Spears (35213799)</td>
+    <td>Tyjae Spears</td>
+    <td>35213799</td>
+    <td>RB/FLEX</td>
+    <td>5100</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>9.05</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jacoby Brissett (35213671)</td>
+    <td>Jacoby Brissett</td>
+    <td>35213671</td>
+    <td>QB</td>
+    <td>5100</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>7.62</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jarrett Stidham (35213670)</td>
+    <td>Jarrett Stidham</td>
+    <td>35213670</td>
+    <td>QB</td>
+    <td>5100</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>9.21</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jameis Winston (35213680)</td>
+    <td>Jameis Winston</td>
+    <td>35213680</td>
+    <td>QB</td>
+    <td>5000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>2.14</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Justin Fields (35213678)</td>
+    <td>Justin Fields</td>
+    <td>35213678</td>
+    <td>QB</td>
+    <td>5000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>19.17</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Michael Penix Jr. (35213679)</td>
+    <td>Michael Penix Jr.</td>
+    <td>35213679</td>
+    <td>QB</td>
+    <td>5000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Tyler Allgeier (35213807)</td>
+    <td>Tyler Allgeier</td>
+    <td>35213807</td>
+    <td>RB/FLEX</td>
+    <td>5000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>8.09</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Keon Coleman (35214123)</td>
+    <td>Keon Coleman</td>
+    <td>35214123</td>
+    <td>WR/FLEX</td>
+    <td>5000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Drake Maye (35213676)</td>
+    <td>Drake Maye</td>
+    <td>35213676</td>
+    <td>QB</td>
+    <td>5000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jake Browning (35213677)</td>
+    <td>Jake Browning</td>
+    <td>35213677</td>
+    <td>QB</td>
+    <td>5000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>17.83</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Chase Brown (35213805)</td>
+    <td>Chase Brown</td>
+    <td>35213805</td>
+    <td>RB/FLEX</td>
+    <td>5000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>4.46</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Joe Flacco (35213675)</td>
+    <td>Joe Flacco</td>
+    <td>35213675</td>
+    <td>QB</td>
+    <td>5000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>23.4</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Tank Bigsby (35213803)</td>
+    <td>Tank Bigsby</td>
+    <td>35213803</td>
+    <td>RB/FLEX</td>
+    <td>5000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>1.46</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jakobi Meyers (35214125)</td>
+    <td>Jakobi Meyers</td>
+    <td>35214125</td>
+    <td>WR/FLEX</td>
+    <td>5000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>13.66</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Sam Howell (35213672)</td>
+    <td>Sam Howell</td>
+    <td>35213672</td>
+    <td>QB</td>
+    <td>5000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>17.38</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Bo Nix (35213673)</td>
+    <td>Bo Nix</td>
+    <td>35213673</td>
+    <td>QB</td>
+    <td>5000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Zach Wilson (35213674)</td>
+    <td>Zach Wilson</td>
+    <td>35213674</td>
+    <td>QB</td>
+    <td>5000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>11.41</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>D'Onta Foreman (35213813)</td>
+    <td>D'Onta Foreman</td>
+    <td>35213813</td>
+    <td>RB/FLEX</td>
+    <td>4900</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>10.13</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Curtis Samuel (35214129)</td>
+    <td>Curtis Samuel</td>
+    <td>35214129</td>
+    <td>WR/FLEX</td>
+    <td>4900</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>10.01</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Mason Rudolph (35213684)</td>
+    <td>Mason Rudolph</td>
+    <td>35213684</td>
+    <td>QB</td>
+    <td>4900</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>11.66</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Antonio Gibson (35213811)</td>
+    <td>Antonio Gibson</td>
+    <td>35213811</td>
+    <td>RB/FLEX</td>
+    <td>4900</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>8.09</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Dalton Schultz (35214647)</td>
+    <td>Dalton Schultz</td>
+    <td>35214647</td>
+    <td>TE/FLEX</td>
+    <td>4900</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>10.26</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Mac Jones (35213683)</td>
+    <td>Mac Jones</td>
+    <td>35213683</td>
+    <td>QB</td>
+    <td>4900</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>11.22</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Easton Stick (35213682)</td>
+    <td>Easton Stick</td>
+    <td>35213682</td>
+    <td>QB</td>
+    <td>4900</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>14.51</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>J.K. Dobbins (35213809)</td>
+    <td>J.K. Dobbins</td>
+    <td>35213809</td>
+    <td>RB/FLEX</td>
+    <td>4900</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>11.7</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jaxon Smith-Njigba (35214127)</td>
+    <td>Jaxon Smith-Njigba</td>
+    <td>35214127</td>
+    <td>WR/FLEX</td>
+    <td>4900</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>8.81</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Marcus Mariota (35213681)</td>
+    <td>Marcus Mariota</td>
+    <td>35213681</td>
+    <td>QB</td>
+    <td>4900</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>3.44</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Nyheim Hines (35213823)</td>
+    <td>Nyheim Hines</td>
+    <td>35213823</td>
+    <td>RB/FLEX</td>
+    <td>4800</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Desmond Ridder (35213687)</td>
+    <td>Desmond Ridder</td>
+    <td>35213687</td>
+    <td>QB</td>
+    <td>4800</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>13.68</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Mitchell Trubisky (35213688)</td>
+    <td>Mitchell Trubisky</td>
+    <td>35213688</td>
+    <td>QB</td>
+    <td>4800</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>10.94</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>DeMario Douglas (35214133)</td>
+    <td>DeMario Douglas</td>
+    <td>35214133</td>
+    <td>WR/FLEX</td>
+    <td>4800</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>7.73</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Josh Downs (35214131)</td>
+    <td>Josh Downs</td>
+    <td>35214131</td>
+    <td>WR/FLEX</td>
+    <td>4800</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>9.42</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Andy Dalton (35213686)</td>
+    <td>Andy Dalton</td>
+    <td>35213686</td>
+    <td>QB</td>
+    <td>4800</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>8.88</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jamaal Williams (35213821)</td>
+    <td>Jamaal Williams</td>
+    <td>35213821</td>
+    <td>RB/FLEX</td>
+    <td>4800</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>4.68</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Drew Lock (35213685)</td>
+    <td>Drew Lock</td>
+    <td>35213685</td>
+    <td>QB</td>
+    <td>4800</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>8.03</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Isaiah Spiller (35213817)</td>
+    <td>Isaiah Spiller</td>
+    <td>35213817</td>
+    <td>RB/FLEX</td>
+    <td>4800</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>2.11</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Alexander Mattison (35213819)</td>
+    <td>Alexander Mattison</td>
+    <td>35213819</td>
+    <td>RB/FLEX</td>
+    <td>4800</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>8.45</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Bucky Irving (35213815)</td>
+    <td>Bucky Irving</td>
+    <td>35213815</td>
+    <td>RB/FLEX</td>
+    <td>4800</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Hassan Haskins (35213833)</td>
+    <td>Hassan Haskins</td>
+    <td>35213833</td>
+    <td>RB/FLEX</td>
+    <td>4700</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Davis Mills (35213691)</td>
+    <td>Davis Mills</td>
+    <td>35213691</td>
+    <td>QB</td>
+    <td>4700</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>2.52</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Mike White (35213690)</td>
+    <td>Mike White</td>
+    <td>35213690</td>
+    <td>QB</td>
+    <td>4700</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0.68</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>D'Ernest Johnson (35213831)</td>
+    <td>D'Ernest Johnson</td>
+    <td>35213831</td>
+    <td>RB/FLEX</td>
+    <td>4700</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>2.05</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Brian Thomas Jr. (35214137)</td>
+    <td>Brian Thomas Jr.</td>
+    <td>35214137</td>
+    <td>WR/FLEX</td>
+    <td>4700</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Kimani Vidal (35213829)</td>
+    <td>Kimani Vidal</td>
+    <td>35213829</td>
+    <td>RB/FLEX</td>
+    <td>4700</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ladd McConkey (35214135)</td>
+    <td>Ladd McConkey</td>
+    <td>35214135</td>
+    <td>WR/FLEX</td>
+    <td>4700</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Samaje Perine (35213827)</td>
+    <td>Samaje Perine</td>
+    <td>35213827</td>
+    <td>RB/FLEX</td>
+    <td>4700</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>7.25</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Kyle Trask (35213689)</td>
+    <td>Kyle Trask</td>
+    <td>35213689</td>
+    <td>QB</td>
+    <td>4700</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>-0.05</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Chase Edmonds (35213825)</td>
+    <td>Chase Edmonds</td>
+    <td>35213825</td>
+    <td>RB/FLEX</td>
+    <td>4700</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>3.23</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Cooper Rush (35213694)</td>
+    <td>Cooper Rush</td>
+    <td>35213694</td>
+    <td>QB</td>
+    <td>4600</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0.61</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Rico Dowdle (35213841)</td>
+    <td>Rico Dowdle</td>
+    <td>35213841</td>
+    <td>RB/FLEX</td>
+    <td>4600</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>5.76</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Kyle Pitts (35214649)</td>
+    <td>Kyle Pitts</td>
+    <td>35214649</td>
+    <td>TE/FLEX</td>
+    <td>4600</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>8.08</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Ty Johnson (35213839)</td>
+    <td>Ty Johnson</td>
+    <td>35213839</td>
+    <td>RB/FLEX</td>
+    <td>4600</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>3.45</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Zay Jones (35214141)</td>
+    <td>Zay Jones</td>
+    <td>35214141</td>
+    <td>WR/FLEX</td>
+    <td>4600</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>8.68</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Tyson Bagent (35213693)</td>
+    <td>Tyson Bagent</td>
+    <td>35213693</td>
+    <td>QB</td>
+    <td>4600</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>12.25</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Dameon Pierce (35213837)</td>
+    <td>Dameon Pierce</td>
+    <td>35213837</td>
+    <td>RB/FLEX</td>
+    <td>4600</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>5.17</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jake Haener (35213692)</td>
+    <td>Jake Haener</td>
+    <td>35213692</td>
+    <td>QB</td>
+    <td>4600</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Kendre Miller (35213835)</td>
+    <td>Kendre Miller</td>
+    <td>35213835</td>
+    <td>RB/FLEX</td>
+    <td>4600</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>5.41</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Xavier Legette (35214139)</td>
+    <td>Xavier Legette</td>
+    <td>35214139</td>
+    <td>WR/FLEX</td>
+    <td>4600</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Taylor Heinicke (35213697)</td>
+    <td>Taylor Heinicke</td>
+    <td>35213697</td>
+    <td>QB</td>
+    <td>4500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>14</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Cordarrelle Patterson (35213853)</td>
+    <td>Cordarrelle Patterson</td>
+    <td>35213853</td>
+    <td>RB/FLEX</td>
+    <td>4500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>2.64</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Ray Davis (35213851)</td>
+    <td>Ray Davis</td>
+    <td>35213851</td>
+    <td>RB/FLEX</td>
+    <td>4500</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tyler Boyd (35214145)</td>
+    <td>Tyler Boyd</td>
+    <td>35214145</td>
+    <td>WR/FLEX</td>
+    <td>4500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>8.75</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Trey Sermon (35213849)</td>
+    <td>Trey Sermon</td>
+    <td>35213849</td>
+    <td>RB/FLEX</td>
+    <td>4500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>1.45</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Gabe Davis (35214143)</td>
+    <td>Gabe Davis</td>
+    <td>35214143</td>
+    <td>WR/FLEX</td>
+    <td>4500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>10.08</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Miles Sanders (35213847)</td>
+    <td>Miles Sanders</td>
+    <td>35213847</td>
+    <td>RB/FLEX</td>
+    <td>4500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>5.6</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Nick Mullens (35213696)</td>
+    <td>Nick Mullens</td>
+    <td>35213696</td>
+    <td>QB</td>
+    <td>4500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>16.75</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Eric Gray (35213845)</td>
+    <td>Eric Gray</td>
+    <td>35213845</td>
+    <td>RB/FLEX</td>
+    <td>4500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Ameer Abdullah (35213843)</td>
+    <td>Ameer Abdullah</td>
+    <td>35213843</td>
+    <td>RB/FLEX</td>
+    <td>4500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>2.41</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Brock Bowers (35214651)</td>
+    <td>Brock Bowers</td>
+    <td>35214651</td>
+    <td>TE/FLEX</td>
+    <td>4500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jeff Driskel (35213695)</td>
+    <td>Jeff Driskel</td>
+    <td>35213695</td>
+    <td>QB</td>
+    <td>4500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>15.94</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Pat Freiermuth (35214653)</td>
+    <td>Pat Freiermuth</td>
+    <td>35214653</td>
+    <td>TE/FLEX</td>
+    <td>4400</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>7.11</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Michael Carter (35213865)</td>
+    <td>Michael Carter</td>
+    <td>35213865</td>
+    <td>RB/FLEX</td>
+    <td>4400</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>3.92</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Roschon Johnson (35213863)</td>
+    <td>Roschon Johnson</td>
+    <td>35213863</td>
+    <td>RB/FLEX</td>
+    <td>4400</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>6.81</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Evan Hull (35213861)</td>
+    <td>Evan Hull</td>
+    <td>35213861</td>
+    <td>RB/FLEX</td>
+    <td>4400</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>1.7</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Rashid Shaheed (35214149)</td>
+    <td>Rashid Shaheed</td>
+    <td>35214149</td>
+    <td>WR/FLEX</td>
+    <td>4400</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>10.64</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Tommy DeVito (35213698)</td>
+    <td>Tommy DeVito</td>
+    <td>35213698</td>
+    <td>QB</td>
+    <td>4400</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>10.84</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Tyrone Tracy Jr. (35213857)</td>
+    <td>Tyrone Tracy Jr.</td>
+    <td>35213857</td>
+    <td>RB/FLEX</td>
+    <td>4400</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Kene Nwangwu (35213859)</td>
+    <td>Kene Nwangwu</td>
+    <td>35213859</td>
+    <td>RB/FLEX</td>
+    <td>4400</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0.14</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Darius Slayton (35214147)</td>
+    <td>Darius Slayton</td>
+    <td>35214147</td>
+    <td>WR/FLEX</td>
+    <td>4400</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>9.06</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Kenny McIntosh (35213855)</td>
+    <td>Kenny McIntosh</td>
+    <td>35213855</td>
+    <td>RB/FLEX</td>
+    <td>4400</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Michael Wilson (35214153)</td>
+    <td>Michael Wilson</td>
+    <td>35214153</td>
+    <td>WR/FLEX</td>
+    <td>4300</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>8.81</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Trayveon Williams (35213871)</td>
+    <td>Trayveon Williams</td>
+    <td>35213871</td>
+    <td>RB/FLEX</td>
+    <td>4300</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0.88</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kendrick Bourne (35214151)</td>
+    <td>Kendrick Bourne</td>
+    <td>35214151</td>
+    <td>WR/FLEX</td>
+    <td>4300</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>12.62</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Cam Akers (35213867)</td>
+    <td>Cam Akers</td>
+    <td>35213867</td>
+    <td>RB/FLEX</td>
+    <td>4300</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>6.67</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Taysom Hill (35214655)</td>
+    <td>Taysom Hill</td>
+    <td>35214655</td>
+    <td>TE/FLEX</td>
+    <td>4300</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>9.03</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jaleel McLaughlin (35213869)</td>
+    <td>Jaleel McLaughlin</td>
+    <td>35213869</td>
+    <td>RB/FLEX</td>
+    <td>4300</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>6.24</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Deuce Vaughn (35213885)</td>
+    <td>Deuce Vaughn</td>
+    <td>35213885</td>
+    <td>RB/FLEX</td>
+    <td>4200</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>2.14</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>La'Mical Perine (35213881)</td>
+    <td>La'Mical Perine</td>
+    <td>35213881</td>
+    <td>RB/FLEX</td>
+    <td>4200</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>1.75</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jase McClellan (35213883)</td>
+    <td>Jase McClellan</td>
+    <td>35213883</td>
+    <td>RB/FLEX</td>
+    <td>4200</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Darnell Mooney (35214157)</td>
+    <td>Darnell Mooney</td>
+    <td>35214157</td>
+    <td>WR/FLEX</td>
+    <td>4200</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>5.26</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Chris Evans (35213879)</td>
+    <td>Chris Evans</td>
+    <td>35213879</td>
+    <td>RB/FLEX</td>
+    <td>4200</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0.3</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Hunter Henry (35214657)</td>
+    <td>Hunter Henry</td>
+    <td>35214657</td>
+    <td>TE/FLEX</td>
+    <td>4200</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>8.56</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Rashaad Penny (35213877)</td>
+    <td>Rashaad Penny</td>
+    <td>35213877</td>
+    <td>RB/FLEX</td>
+    <td>4200</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>1.6</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Myles Gaskin (35213875)</td>
+    <td>Myles Gaskin</td>
+    <td>35213875</td>
+    <td>RB/FLEX</td>
+    <td>4200</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>George Holani (35213873)</td>
+    <td>George Holani</td>
+    <td>35213873</td>
+    <td>RB/FLEX</td>
+    <td>4200</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Josh Reynolds (35214155)</td>
+    <td>Josh Reynolds</td>
+    <td>35214155</td>
+    <td>WR/FLEX</td>
+    <td>4200</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>7.85</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Cole Kmet (35214659)</td>
+    <td>Cole Kmet</td>
+    <td>35214659</td>
+    <td>TE/FLEX</td>
+    <td>4100</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>10.83</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Kevin Harris (35213887)</td>
+    <td>Kevin Harris</td>
+    <td>35213887</td>
+    <td>RB/FLEX</td>
+    <td>4100</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>5.32</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Wan'Dale Robinson (35214163)</td>
+    <td>Wan'Dale Robinson</td>
+    <td>35214163</td>
+    <td>WR/FLEX</td>
+    <td>4100</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>8.88</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Quentin Johnston (35214161)</td>
+    <td>Quentin Johnston</td>
+    <td>35214161</td>
+    <td>WR/FLEX</td>
+    <td>4100</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>5.53</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jahan Dotson (35214159)</td>
+    <td>Jahan Dotson</td>
+    <td>35214159</td>
+    <td>WR/FLEX</td>
+    <td>4100</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>7.52</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Dillon Johnson (35214001)</td>
+    <td>Dillon Johnson</td>
+    <td>35214001</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Trey Lance (35213732)</td>
+    <td>Trey Lance</td>
+    <td>35213732</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Tyler Huntley (35213733)</td>
+    <td>Tyler Huntley</td>
+    <td>35213733</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>5.12</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Dorian Thompson-Robinson (35213734)</td>
+    <td>Dorian Thompson-Robinson</td>
+    <td>35213734</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>3.26</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Royce Freeman (35214037)</td>
+    <td>Royce Freeman</td>
+    <td>35214037</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>3.08</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Malik Davis (35214039)</td>
+    <td>Malik Davis</td>
+    <td>35214039</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Snoop Conner (35214041)</td>
+    <td>Snoop Conner</td>
+    <td>35214041</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Nathaniel Peat (35214043)</td>
+    <td>Nathaniel Peat</td>
+    <td>35214043</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Hunter Luepke (35214045)</td>
+    <td>Hunter Luepke</td>
+    <td>35214045</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0.71</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Pierre Strong Jr. (35214047)</td>
+    <td>Pierre Strong Jr.</td>
+    <td>35214047</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>2.58</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>John Kelly Jr. (35214049)</td>
+    <td>John Kelly Jr.</td>
+    <td>35214049</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Aidan Robbins (35214051)</td>
+    <td>Aidan Robbins</td>
+    <td>35214051</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Kyle Allen (35213729)</td>
+    <td>Kyle Allen</td>
+    <td>35213729</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>-0.19</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>John Rhys Plumlee (35213730)</td>
+    <td>John Rhys Plumlee</td>
+    <td>35213730</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>John Paddock (35213731)</td>
+    <td>John Paddock</td>
+    <td>35213731</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jonathan Ward (35214023)</td>
+    <td>Jonathan Ward</td>
+    <td>35214023</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0.14</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Aaron Shampklin (35214025)</td>
+    <td>Aaron Shampklin</td>
+    <td>35214025</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Daijun Edwards (35214027)</td>
+    <td>Daijun Edwards</td>
+    <td>35214027</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jack Colletto (35214029)</td>
+    <td>Jack Colletto</td>
+    <td>35214029</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Avery Williams (35214031)</td>
+    <td>Avery Williams</td>
+    <td>35214031</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Carlos Washington Jr. (35214033)</td>
+    <td>Carlos Washington Jr.</td>
+    <td>35214033</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Robert Burns (35214035)</td>
+    <td>Robert Burns</td>
+    <td>35214035</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Anthony Brown Jr. (35213705)</td>
+    <td>Anthony Brown Jr.</td>
+    <td>35213705</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Clayton Tune (35213727)</td>
+    <td>Clayton Tune</td>
+    <td>35213727</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>1.5</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Shane Buechele (35213728)</td>
+    <td>Shane Buechele</td>
+    <td>35213728</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Emari Demercado (35214011)</td>
+    <td>Emari Demercado</td>
+    <td>35214011</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>5.24</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>DeeJay Dallas (35214013)</td>
+    <td>DeeJay Dallas</td>
+    <td>35214013</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0.6</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Tony Jones Jr. (35214015)</td>
+    <td>Tony Jones Jr.</td>
+    <td>35214015</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>4.6</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Darrynton Evans (35214017)</td>
+    <td>Darrynton Evans</td>
+    <td>35214017</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>4.29</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Frank Gore Jr. (35214019)</td>
+    <td>Frank Gore Jr.</td>
+    <td>35214019</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Reggie Gilliam (35214021)</td>
+    <td>Reggie Gilliam</td>
+    <td>35214021</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0.07</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Malik Willis (35213724)</td>
+    <td>Malik Willis</td>
+    <td>35213724</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>1.35</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Brett Rypien (35213725)</td>
+    <td>Brett Rypien</td>
+    <td>35213725</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>3.39</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Austin Reed (35213726)</td>
+    <td>Austin Reed</td>
+    <td>35213726</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Julius Chestnut (35213999)</td>
+    <td>Julius Chestnut</td>
+    <td>35213999</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jabari Small (35214003)</td>
+    <td>Jabari Small</td>
+    <td>35214003</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Travis Homer (35214005)</td>
+    <td>Travis Homer</td>
+    <td>35214005</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Ian Wheeler (35214007)</td>
+    <td>Ian Wheeler</td>
+    <td>35214007</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Khari Blasingame (35214009)</td>
+    <td>Khari Blasingame</td>
+    <td>35214009</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0.36</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Rome Odunze (35214169)</td>
+    <td>Rome Odunze</td>
+    <td>35214169</td>
+    <td>WR/FLEX</td>
+    <td>4000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Bailey Zappe (35213720)</td>
+    <td>Bailey Zappe</td>
+    <td>35213720</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>7.92</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Joe Milton III (35213721)</td>
+    <td>Joe Milton III</td>
+    <td>35213721</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Logan Woodside (35213722)</td>
+    <td>Logan Woodside</td>
+    <td>35213722</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0.68</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Rocky Lombardi (35213723)</td>
+    <td>Rocky Lombardi</td>
+    <td>35213723</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>JaMycal Hasty (35213989)</td>
+    <td>JaMycal Hasty</td>
+    <td>35213989</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Deshaun Fenwick (35213991)</td>
+    <td>Deshaun Fenwick</td>
+    <td>35213991</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Terrell Jennings (35213993)</td>
+    <td>Terrell Jennings</td>
+    <td>35213993</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Elijah Collins (35213995)</td>
+    <td>Elijah Collins</td>
+    <td>35213995</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Noah Cain (35213997)</td>
+    <td>Noah Cain</td>
+    <td>35213997</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Sam Ehlinger (35213715)</td>
+    <td>Sam Ehlinger</td>
+    <td>35213715</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Kedon Slovis (35213716)</td>
+    <td>Kedon Slovis</td>
+    <td>35213716</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jason Bean (35213717)</td>
+    <td>Jason Bean</td>
+    <td>35213717</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Case Keenum (35213718)</td>
+    <td>Case Keenum</td>
+    <td>35213718</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>6.37</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Tim Boyle (35213719)</td>
+    <td>Tim Boyle</td>
+    <td>35213719</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>4.97</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Tyler Goodson (35213971)</td>
+    <td>Tyler Goodson</td>
+    <td>35213971</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>3.02</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Zavier Scott (35213973)</td>
+    <td>Zavier Scott</td>
+    <td>35213973</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Trent Pennix (35213975)</td>
+    <td>Trent Pennix</td>
+    <td>35213975</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Dare Ogunbowale (35213977)</td>
+    <td>Dare Ogunbowale</td>
+    <td>35213977</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0.74</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jawhar Jordan (35213979)</td>
+    <td>Jawhar Jordan</td>
+    <td>35213979</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>J.J. Taylor (35213981)</td>
+    <td>J.J. Taylor</td>
+    <td>35213981</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>British Brooks (35213983)</td>
+    <td>British Brooks</td>
+    <td>35213983</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Andrew Beck (35213985)</td>
+    <td>Andrew Beck</td>
+    <td>35213985</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>2.34</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Troy Hairston (35213987)</td>
+    <td>Troy Hairston</td>
+    <td>35213987</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Alec Pierce (35214167)</td>
+    <td>Alec Pierce</td>
+    <td>35214167</td>
+    <td>WR/FLEX</td>
+    <td>4000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>5.79</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>C.J. Beathard (35213712)</td>
+    <td>C.J. Beathard</td>
+    <td>35213712</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>3.07</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Skylar Thompson (35213713)</td>
+    <td>Skylar Thompson</td>
+    <td>35213713</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Gavin Hardison (35213714)</td>
+    <td>Gavin Hardison</td>
+    <td>35213714</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Zander Horvath (35213953)</td>
+    <td>Zander Horvath</td>
+    <td>35213953</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Keilan Robinson (35213955)</td>
+    <td>Keilan Robinson</td>
+    <td>35213955</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jalen Jackson (35213959)</td>
+    <td>Jalen Jackson</td>
+    <td>35213959</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jaylen Wright (35213961)</td>
+    <td>Jaylen Wright</td>
+    <td>35213961</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jeff Wilson Jr. (35213963)</td>
+    <td>Jeff Wilson Jr.</td>
+    <td>35213963</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>3.9</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Salvon Ahmed (35213965)</td>
+    <td>Salvon Ahmed</td>
+    <td>35213965</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>5.36</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Chris Brooks (35213967)</td>
+    <td>Chris Brooks</td>
+    <td>35213967</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>1.06</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Alec Ingold (35213969)</td>
+    <td>Alec Ingold</td>
+    <td>35213969</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>1.38</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jack Plummer (35213709)</td>
+    <td>Jack Plummer</td>
+    <td>35213709</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Spencer Rattler (35213710)</td>
+    <td>Spencer Rattler</td>
+    <td>35213710</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Raheem Blackshear (35213939)</td>
+    <td>Raheem Blackshear</td>
+    <td>35213939</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>1.42</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Mike Boone (35213941)</td>
+    <td>Mike Boone</td>
+    <td>35213941</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>1.48</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jaden Shirden (35213943)</td>
+    <td>Jaden Shirden</td>
+    <td>35213943</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jordan Mims (35213945)</td>
+    <td>Jordan Mims</td>
+    <td>35213945</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>James Robinson (35213947)</td>
+    <td>James Robinson</td>
+    <td>35213947</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jacob Kibodi (35213949)</td>
+    <td>Jacob Kibodi</td>
+    <td>35213949</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Adam Prentice (35213951)</td>
+    <td>Adam Prentice</td>
+    <td>35213951</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0.26</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Nathan Rourke (35213707)</td>
+    <td>Nathan Rourke</td>
+    <td>35213707</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Jaren Hall (35213708)</td>
+    <td>Jaren Hall</td>
+    <td>35213708</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>1.71</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jashaun Corbin (35213929)</td>
+    <td>Jashaun Corbin</td>
+    <td>35213929</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0.72</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Dante Miller (35213931)</td>
+    <td>Dante Miller</td>
+    <td>35213931</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jacob Saylors (35213933)</td>
+    <td>Jacob Saylors</td>
+    <td>35213933</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>DeWayne McBride (35213935)</td>
+    <td>DeWayne McBride</td>
+    <td>35213935</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>C.J. Ham (35213937)</td>
+    <td>C.J. Ham</td>
+    <td>35213937</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0.6</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Lorenzo Lingard (35213957)</td>
+    <td>Lorenzo Lingard</td>
+    <td>35213957</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Max Duggan (35213703)</td>
+    <td>Max Duggan</td>
+    <td>35213703</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Casey Bauman (35213704)</td>
+    <td>Casey Bauman</td>
+    <td>35213704</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Carter Bradley (35213706)</td>
+    <td>Carter Bradley</td>
+    <td>35213706</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Nathan Peterman (35213711)</td>
+    <td>Nathan Peterman</td>
+    <td>35213711</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>-0.2</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Elijah Dotson (35213915)</td>
+    <td>Elijah Dotson</td>
+    <td>35213915</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0.98</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jaret Patterson (35213917)</td>
+    <td>Jaret Patterson</td>
+    <td>35213917</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Ben Mason (35213919)</td>
+    <td>Ben Mason</td>
+    <td>35213919</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Dylan Laube (35213921)</td>
+    <td>Dylan Laube</td>
+    <td>35213921</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Brittain Brown (35213923)</td>
+    <td>Brittain Brown</td>
+    <td>35213923</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Sincere McCormick (35213925)</td>
+    <td>Sincere McCormick</td>
+    <td>35213925</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Tyreik McAllister (35213927)</td>
+    <td>Tyreik McAllister</td>
+    <td>35213927</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>DJ Chark (35214165)</td>
+    <td>DJ Chark</td>
+    <td>35214165</td>
+    <td>WR/FLEX</td>
+    <td>4000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>7.77</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>PJ Walker (35213702)</td>
+    <td>PJ Walker</td>
+    <td>35213702</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>4.49</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Kobe Lewis (35213903)</td>
+    <td>Kobe Lewis</td>
+    <td>35213903</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Ricky Person Jr. (35213905)</td>
+    <td>Ricky Person Jr.</td>
+    <td>35213905</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Audric Estime (35213907)</td>
+    <td>Audric Estime</td>
+    <td>35213907</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Tyler Badie (35213909)</td>
+    <td>Tyler Badie</td>
+    <td>35213909</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Blake Watson (35213911)</td>
+    <td>Blake Watson</td>
+    <td>35213911</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Michael Burton (35213913)</td>
+    <td>Michael Burton</td>
+    <td>35213913</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0.39</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Noah Fant (35214661)</td>
+    <td>Noah Fant</td>
+    <td>35214661</td>
+    <td>TE/FLEX</td>
+    <td>4000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>4.32</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Sam Hartman (35213699)</td>
+    <td>Sam Hartman</td>
+    <td>35213699</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>John Wolford (35213700)</td>
+    <td>John Wolford</td>
+    <td>35213700</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>QB</td>
+    <td>Zack Annexstad (35213701)</td>
+    <td>Zack Annexstad</td>
+    <td>35213701</td>
+    <td>QB</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Chris Rodriguez Jr. (35213889)</td>
+    <td>Chris Rodriguez Jr.</td>
+    <td>35213889</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>2.99</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Jeremy McNichols (35213891)</td>
+    <td>Jeremy McNichols</td>
+    <td>35213891</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Austin Jones (35213893)</td>
+    <td>Austin Jones</td>
+    <td>35213893</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Michael Wiley (35213895)</td>
+    <td>Michael Wiley</td>
+    <td>35213895</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Sean Tucker (35213897)</td>
+    <td>Sean Tucker</td>
+    <td>35213897</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0.47</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>D.J. Williams (35213899)</td>
+    <td>D.J. Williams</td>
+    <td>35213899</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>RB</td>
+    <td>Ramon Jefferson (35213901)</td>
+    <td>Ramon Jefferson</td>
+    <td>35213901</td>
+    <td>RB/FLEX</td>
+    <td>4000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Cowboys  (35214933)</td>
+    <td>Cowboys </td>
+    <td>35214933</td>
+    <td>DST</td>
+    <td>3900</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>9.67</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Greg Dortch (35214175)</td>
+    <td>Greg Dortch</td>
+    <td>35214175</td>
+    <td>WR/FLEX</td>
+    <td>3900</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>4.03</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Chig Okonkwo (35214663)</td>
+    <td>Chig Okonkwo</td>
+    <td>35214663</td>
+    <td>TE/FLEX</td>
+    <td>3900</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>6.67</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ja'Lynn Polk (35214171)</td>
+    <td>Ja'Lynn Polk</td>
+    <td>35214171</td>
+    <td>WR/FLEX</td>
+    <td>3900</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Trenton Irwin (35214173)</td>
+    <td>Trenton Irwin</td>
+    <td>35214173</td>
+    <td>WR/FLEX</td>
+    <td>3900</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>3.91</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Bengals  (35214934)</td>
+    <td>Bengals </td>
+    <td>35214934</td>
+    <td>DST</td>
+    <td>3800</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>6.94</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Adonai Mitchell (35214179)</td>
+    <td>Adonai Mitchell</td>
+    <td>35214179</td>
+    <td>WR/FLEX</td>
+    <td>3800</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Odell Beckham Jr. (35214177)</td>
+    <td>Odell Beckham Jr.</td>
+    <td>35214177</td>
+    <td>WR/FLEX</td>
+    <td>3800</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>7.43</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Cade Otton (35214665)</td>
+    <td>Cade Otton</td>
+    <td>35214665</td>
+    <td>TE/FLEX</td>
+    <td>3800</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>8</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Marquez Valdes-Scantling (35214185)</td>
+    <td>Marquez Valdes-Scantling</td>
+    <td>35214185</td>
+    <td>WR/FLEX</td>
+    <td>3700</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>4.22</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jermaine Burton (35214183)</td>
+    <td>Jermaine Burton</td>
+    <td>35214183</td>
+    <td>WR/FLEX</td>
+    <td>3700</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Cedrick Wilson Jr. (35214181)</td>
+    <td>Cedrick Wilson Jr.</td>
+    <td>35214181</td>
+    <td>WR/FLEX</td>
+    <td>3700</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>4.77</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Juwan Johnson (35214667)</td>
+    <td>Juwan Johnson</td>
+    <td>35214667</td>
+    <td>TE/FLEX</td>
+    <td>3700</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>7.52</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Saints  (35214935)</td>
+    <td>Saints </td>
+    <td>35214935</td>
+    <td>DST</td>
+    <td>3700</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>8.41</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Elijah Moore (35214193)</td>
+    <td>Elijah Moore</td>
+    <td>35214193</td>
+    <td>WR/FLEX</td>
+    <td>3600</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>7.63</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Van Jefferson (35214189)</td>
+    <td>Van Jefferson</td>
+    <td>35214189</td>
+    <td>WR/FLEX</td>
+    <td>3600</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>2.43</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Rondale Moore (35214191)</td>
+    <td>Rondale Moore</td>
+    <td>35214191</td>
+    <td>WR/FLEX</td>
+    <td>3600</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>6.18</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>A.T. Perry (35214187)</td>
+    <td>A.T. Perry</td>
+    <td>35214187</td>
+    <td>WR/FLEX</td>
+    <td>3600</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>6.06</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Vikings  (35214936)</td>
+    <td>Vikings </td>
+    <td>35214936</td>
+    <td>DST</td>
+    <td>3600</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>7.35</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Zach Ertz (35214669)</td>
+    <td>Zach Ertz</td>
+    <td>35214669</td>
+    <td>TE/FLEX</td>
+    <td>3600</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>7.39</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>K.J. Osborn (35214199)</td>
+    <td>K.J. Osborn</td>
+    <td>35214199</td>
+    <td>WR/FLEX</td>
+    <td>3500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>7.5</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>JuJu Smith-Schuster (35214201)</td>
+    <td>JuJu Smith-Schuster</td>
+    <td>35214201</td>
+    <td>WR/FLEX</td>
+    <td>3500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>5.54</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jonnu Smith (35214671)</td>
+    <td>Jonnu Smith</td>
+    <td>35214671</td>
+    <td>TE/FLEX</td>
+    <td>3500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>7.54</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tre Tucker (35214197)</td>
+    <td>Tre Tucker</td>
+    <td>35214197</td>
+    <td>WR/FLEX</td>
+    <td>3500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>4.49</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Marvin Mims Jr. (35214195)</td>
+    <td>Marvin Mims Jr.</td>
+    <td>35214195</td>
+    <td>WR/FLEX</td>
+    <td>3500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>4.73</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Buccaneers  (35214937)</td>
+    <td>Buccaneers </td>
+    <td>35214937</td>
+    <td>DST</td>
+    <td>3500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>7.63</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen Tolbert (35214211)</td>
+    <td>Jalen Tolbert</td>
+    <td>35214211</td>
+    <td>WR/FLEX</td>
+    <td>3400</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>3.32</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Dawson Knox (35214675)</td>
+    <td>Dawson Knox</td>
+    <td>35214675</td>
+    <td>TE/FLEX</td>
+    <td>3400</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>4.56</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Treylon Burks (35214209)</td>
+    <td>Treylon Burks</td>
+    <td>35214209</td>
+    <td>WR/FLEX</td>
+    <td>3400</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>3.63</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Gerald Everett (35214673)</td>
+    <td>Gerald Everett</td>
+    <td>35214673</td>
+    <td>TE/FLEX</td>
+    <td>3400</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>7.41</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Bears  (35214939)</td>
+    <td>Bears </td>
+    <td>35214939</td>
+    <td>DST</td>
+    <td>3400</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>7.06</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jonathan Mingo (35214207)</td>
+    <td>Jonathan Mingo</td>
+    <td>35214207</td>
+    <td>WR/FLEX</td>
+    <td>3400</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>5.65</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tim Patrick (35214205)</td>
+    <td>Tim Patrick</td>
+    <td>35214205</td>
+    <td>WR/FLEX</td>
+    <td>3400</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Seahawks  (35214938)</td>
+    <td>Seahawks </td>
+    <td>35214938</td>
+    <td>DST</td>
+    <td>3400</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>6.41</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Trey Palmer (35214203)</td>
+    <td>Trey Palmer</td>
+    <td>35214203</td>
+    <td>WR/FLEX</td>
+    <td>3400</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>6.07</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Falcons  (35214941)</td>
+    <td>Falcons </td>
+    <td>35214941</td>
+    <td>DST</td>
+    <td>3300</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>5.82</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jelani Woods (35214679)</td>
+    <td>Jelani Woods</td>
+    <td>35214679</td>
+    <td>TE/FLEX</td>
+    <td>3300</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Parker Washington (35214219)</td>
+    <td>Parker Washington</td>
+    <td>35214219</td>
+    <td>WR/FLEX</td>
+    <td>3300</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>4.47</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Josh Oliver (35214677)</td>
+    <td>Josh Oliver</td>
+    <td>35214677</td>
+    <td>TE/FLEX</td>
+    <td>3300</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>3.19</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Giants  (35214940)</td>
+    <td>Giants </td>
+    <td>35214940</td>
+    <td>DST</td>
+    <td>3300</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>7.71</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Laviska Shenault Jr. (35214217)</td>
+    <td>Laviska Shenault Jr.</td>
+    <td>35214217</td>
+    <td>WR/FLEX</td>
+    <td>3300</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>2.69</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Luke McCaffrey (35214213)</td>
+    <td>Luke McCaffrey</td>
+    <td>35214213</td>
+    <td>WR/FLEX</td>
+    <td>3300</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen McMillan (35214215)</td>
+    <td>Jalen McMillan</td>
+    <td>35214215</td>
+    <td>WR/FLEX</td>
+    <td>3300</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Cedric Tillman (35214231)</td>
+    <td>Cedric Tillman</td>
+    <td>35214231</td>
+    <td>WR/FLEX</td>
+    <td>3200</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>3.16</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Roman Wilson (35214229)</td>
+    <td>Roman Wilson</td>
+    <td>35214229</td>
+    <td>WR/FLEX</td>
+    <td>3200</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Nick Westbrook-Ikhine (35214227)</td>
+    <td>Nick Westbrook-Ikhine</td>
+    <td>35214227</td>
+    <td>WR/FLEX</td>
+    <td>3200</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>6.07</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Noah Brown (35214225)</td>
+    <td>Noah Brown</td>
+    <td>35214225</td>
+    <td>WR/FLEX</td>
+    <td>3200</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>9.78</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Durham Smythe (35214683)</td>
+    <td>Durham Smythe</td>
+    <td>35214683</td>
+    <td>TE/FLEX</td>
+    <td>3200</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>4.46</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Dolphins  (35214942)</td>
+    <td>Dolphins </td>
+    <td>35214942</td>
+    <td>DST</td>
+    <td>3200</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>8.56</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Brandon Powell (35214221)</td>
+    <td>Brandon Powell</td>
+    <td>35214221</td>
+    <td>WR/FLEX</td>
+    <td>3200</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>4.01</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Trent Sherfield Sr. (35214223)</td>
+    <td>Trent Sherfield Sr.</td>
+    <td>35214223</td>
+    <td>WR/FLEX</td>
+    <td>3200</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>1.44</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Donald Parham Jr. (35214681)</td>
+    <td>Donald Parham Jr.</td>
+    <td>35214681</td>
+    <td>TE/FLEX</td>
+    <td>3200</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>5.67</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>KaVontae Turpin (35214241)</td>
+    <td>KaVontae Turpin</td>
+    <td>35214241</td>
+    <td>WR/FLEX</td>
+    <td>3100</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>3.51</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>David Bell (35214243)</td>
+    <td>David Bell</td>
+    <td>35214243</td>
+    <td>WR/FLEX</td>
+    <td>3100</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>3.88</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Browns  (35214943)</td>
+    <td>Browns </td>
+    <td>35214943</td>
+    <td>DST</td>
+    <td>3100</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>8.67</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Calvin Austin III (35214237)</td>
+    <td>Calvin Austin III</td>
+    <td>35214237</td>
+    <td>WR/FLEX</td>
+    <td>3100</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>3.36</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>KhaDarel Hodge (35214239)</td>
+    <td>KhaDarel Hodge</td>
+    <td>35214239</td>
+    <td>WR/FLEX</td>
+    <td>3100</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>2.19</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Austin Hooper (35214691)</td>
+    <td>Austin Hooper</td>
+    <td>35214691</td>
+    <td>TE/FLEX</td>
+    <td>3100</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>2.85</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Robert Woods (35214235)</td>
+    <td>Robert Woods</td>
+    <td>35214235</td>
+    <td>WR/FLEX</td>
+    <td>3100</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>5.81</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalin Hyatt (35214233)</td>
+    <td>Jalin Hyatt</td>
+    <td>35214233</td>
+    <td>WR/FLEX</td>
+    <td>3100</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>3.72</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Will Dissly (35214687)</td>
+    <td>Will Dissly</td>
+    <td>35214687</td>
+    <td>TE/FLEX</td>
+    <td>3100</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>2.51</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Michael Mayer (35214689)</td>
+    <td>Michael Mayer</td>
+    <td>35214689</td>
+    <td>TE/FLEX</td>
+    <td>3100</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>5.1</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Adam Trautman (35214685)</td>
+    <td>Adam Trautman</td>
+    <td>35214685</td>
+    <td>TE/FLEX</td>
+    <td>3100</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>3.55</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Daewood Davis (35214397)</td>
+    <td>Daewood Davis</td>
+    <td>35214397</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>-</td>
+    <td>FA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen Brooks (35214603)</td>
+    <td>Jalen Brooks</td>
+    <td>35214603</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>1.77</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ryan Flournoy (35214605)</td>
+    <td>Ryan Flournoy</td>
+    <td>35214605</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>John Stephens Jr. (35214607)</td>
+    <td>John Stephens Jr.</td>
+    <td>35214607</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Racey McMath (35214609)</td>
+    <td>Racey McMath</td>
+    <td>35214609</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen Cropper (35214611)</td>
+    <td>Jalen Cropper</td>
+    <td>35214611</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tyron Billy-Johnson (35214613)</td>
+    <td>Tyron Billy-Johnson</td>
+    <td>35214613</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>David Durden (35214615)</td>
+    <td>David Durden</td>
+    <td>35214615</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Cam Johnson (35214617)</td>
+    <td>Cam Johnson</td>
+    <td>35214617</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Corey Crooms Jr. (35214619)</td>
+    <td>Corey Crooms Jr.</td>
+    <td>35214619</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jamari Thrash (35214621)</td>
+    <td>Jamari Thrash</td>
+    <td>35214621</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>James Proche II (35214623)</td>
+    <td>James Proche II</td>
+    <td>35214623</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>-0.09</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Michael Woods II (35214625)</td>
+    <td>Michael Woods II</td>
+    <td>35214625</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jaelon Darden (35214627)</td>
+    <td>Jaelon Darden</td>
+    <td>35214627</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ahmarean Brown (35214629)</td>
+    <td>Ahmarean Brown</td>
+    <td>35214629</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen Camp (35214631)</td>
+    <td>Jalen Camp</td>
+    <td>35214631</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Quez Watkins (35214571)</td>
+    <td>Quez Watkins</td>
+    <td>35214571</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>3.94</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Scotty Miller (35214573)</td>
+    <td>Scotty Miller</td>
+    <td>35214573</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>2.3</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dez Fitzpatrick (35214575)</td>
+    <td>Dez Fitzpatrick</td>
+    <td>35214575</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Marquez Callaway (35214577)</td>
+    <td>Marquez Callaway</td>
+    <td>35214577</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Duece Watts (35214579)</td>
+    <td>Duece Watts</td>
+    <td>35214579</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jacob Copeland (35214581)</td>
+    <td>Jacob Copeland</td>
+    <td>35214581</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jaray Jenkins (35214583)</td>
+    <td>Jaray Jenkins</td>
+    <td>35214583</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Casey Washington (35214585)</td>
+    <td>Casey Washington</td>
+    <td>35214585</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ray-Ray McCloud III (35214587)</td>
+    <td>Ray-Ray McCloud III</td>
+    <td>35214587</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>2.21</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Josh Ali (35214589)</td>
+    <td>Josh Ali</td>
+    <td>35214589</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Chris Blair (35214591)</td>
+    <td>Chris Blair</td>
+    <td>35214591</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Austin Mack (35214593)</td>
+    <td>Austin Mack</td>
+    <td>35214593</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dylan Drummond (35214597)</td>
+    <td>Dylan Drummond</td>
+    <td>35214597</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>OJ Hiliare (35214601)</td>
+    <td>OJ Hiliare</td>
+    <td>35214601</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Damiere Byrd (35214261)</td>
+    <td>Damiere Byrd</td>
+    <td>35214261</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Chris Moore (35214537)</td>
+    <td>Chris Moore</td>
+    <td>35214537</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>4.02</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Zach Pascal (35214539)</td>
+    <td>Zach Pascal</td>
+    <td>35214539</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0.42</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tejhaun Palmer (35214541)</td>
+    <td>Tejhaun Palmer</td>
+    <td>35214541</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Andre Baccellia (35214543)</td>
+    <td>Andre Baccellia</td>
+    <td>35214543</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jeff Smith (35214545)</td>
+    <td>Jeff Smith</td>
+    <td>35214545</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Daniel Arias (35214547)</td>
+    <td>Daniel Arias</td>
+    <td>35214547</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dan Chisena (35214549)</td>
+    <td>Dan Chisena</td>
+    <td>35214549</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Xavier Weaver (35214551)</td>
+    <td>Xavier Weaver</td>
+    <td>35214551</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Chase Claypool (35214553)</td>
+    <td>Chase Claypool</td>
+    <td>35214553</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>1.67</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Mack Hollins (35214555)</td>
+    <td>Mack Hollins</td>
+    <td>35214555</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>3.32</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Justin Shorter (35214557)</td>
+    <td>Justin Shorter</td>
+    <td>35214557</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>KJ Hamler (35214559)</td>
+    <td>KJ Hamler</td>
+    <td>35214559</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Andy Isabella (35214561)</td>
+    <td>Andy Isabella</td>
+    <td>35214561</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tyrell Shavers (35214563)</td>
+    <td>Tyrell Shavers</td>
+    <td>35214563</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Bryan Thompson (35214565)</td>
+    <td>Bryan Thompson</td>
+    <td>35214565</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Xavier Johnson (35214567)</td>
+    <td>Xavier Johnson</td>
+    <td>35214567</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Lawrence Keys III (35214569)</td>
+    <td>Lawrence Keys III</td>
+    <td>35214569</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Daylen Baldwin (35214599)</td>
+    <td>Daylen Baldwin</td>
+    <td>35214599</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Bills  (35214944)</td>
+    <td>Bills </td>
+    <td>35214944</td>
+    <td>DST</td>
+    <td>3000</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>8.79</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kyle Philips (35214503)</td>
+    <td>Kyle Philips</td>
+    <td>35214503</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>3.57</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jha'Quan Jackson (35214505)</td>
+    <td>Jha'Quan Jackson</td>
+    <td>35214505</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Colton Dowell (35214507)</td>
+    <td>Colton Dowell</td>
+    <td>35214507</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0.13</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Mason Kinsey (35214509)</td>
+    <td>Mason Kinsey</td>
+    <td>35214509</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0.27</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kearis Jackson (35214511)</td>
+    <td>Kearis Jackson</td>
+    <td>35214511</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tre'Shaun Harrison (35214513)</td>
+    <td>Tre'Shaun Harrison</td>
+    <td>35214513</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Sam Schnee (35214515)</td>
+    <td>Sam Schnee</td>
+    <td>35214515</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Bryce Oliver (35214517)</td>
+    <td>Bryce Oliver</td>
+    <td>35214517</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tyler Scott (35214519)</td>
+    <td>Tyler Scott</td>
+    <td>35214519</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>2.17</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Velus Jones Jr. (35214521)</td>
+    <td>Velus Jones Jr.</td>
+    <td>35214521</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0.79</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dante Pettis (35214523)</td>
+    <td>Dante Pettis</td>
+    <td>35214523</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>DeAndre Carter (35214525)</td>
+    <td>DeAndre Carter</td>
+    <td>35214525</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0.57</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Collin Johnson (35214527)</td>
+    <td>Collin Johnson</td>
+    <td>35214527</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0.7</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Nsimba Webster (35214529)</td>
+    <td>Nsimba Webster</td>
+    <td>35214529</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Freddie Swain (35214531)</td>
+    <td>Freddie Swain</td>
+    <td>35214531</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Peter LeBlanc (35214533)</td>
+    <td>Peter LeBlanc</td>
+    <td>35214533</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>John Jackson III (35214535)</td>
+    <td>John Jackson III</td>
+    <td>35214535</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Javon Baker (35214475)</td>
+    <td>Javon Baker</td>
+    <td>35214475</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen Reagor (35214477)</td>
+    <td>Jalen Reagor</td>
+    <td>35214477</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>2.59</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tyquan Thornton (35214479)</td>
+    <td>Tyquan Thornton</td>
+    <td>35214479</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>3.02</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kayshon Boutte (35214481)</td>
+    <td>Kayshon Boutte</td>
+    <td>35214481</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0.78</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kawaan Baker (35214483)</td>
+    <td>Kawaan Baker</td>
+    <td>35214483</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>David Wallis (35214485)</td>
+    <td>David Wallis</td>
+    <td>35214485</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>JaQuae Jackson (35214487)</td>
+    <td>JaQuae Jackson</td>
+    <td>35214487</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Andrei Iosivas (35214489)</td>
+    <td>Andrei Iosivas</td>
+    <td>35214489</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>3.16</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Charlie Jones (35214491)</td>
+    <td>Charlie Jones</td>
+    <td>35214491</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>1.88</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Shedrick Jackson (35214493)</td>
+    <td>Shedrick Jackson</td>
+    <td>35214493</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kwamie Lassiter II (35214495)</td>
+    <td>Kwamie Lassiter II</td>
+    <td>35214495</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>1.2</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kendric Pryor (35214497)</td>
+    <td>Kendric Pryor</td>
+    <td>35214497</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Cole Burgess (35214499)</td>
+    <td>Cole Burgess</td>
+    <td>35214499</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tre Mosley (35214501)</td>
+    <td>Tre Mosley</td>
+    <td>35214501</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Matt Landers (35214633)</td>
+    <td>Matt Landers</td>
+    <td>35214633</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Mike Gesicki (35214699)</td>
+    <td>Mike Gesicki</td>
+    <td>35214699</td>
+    <td>TE/FLEX</td>
+    <td>3000</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>3.85</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Quintez Cephus (35214249)</td>
+    <td>Quintez Cephus</td>
+    <td>35214249</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ashton Dulin (35214445)</td>
+    <td>Ashton Dulin</td>
+    <td>35214445</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Anthony Gould (35214447)</td>
+    <td>Anthony Gould</td>
+    <td>35214447</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>D.J. Montgomery (35214449)</td>
+    <td>D.J. Montgomery</td>
+    <td>35214449</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>2.09</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ethan Fernea (35214451)</td>
+    <td>Ethan Fernea</td>
+    <td>35214451</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Juwann Winfree (35214453)</td>
+    <td>Juwann Winfree</td>
+    <td>35214453</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Derek Slywka (35214455)</td>
+    <td>Derek Slywka</td>
+    <td>35214455</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tyrie Cleveland (35214457)</td>
+    <td>Tyrie Cleveland</td>
+    <td>35214457</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Xavier White (35214459)</td>
+    <td>Xavier White</td>
+    <td>35214459</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>John Metchie III (35214461)</td>
+    <td>John Metchie III</td>
+    <td>35214461</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>2.25</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ben Skowronek (35214463)</td>
+    <td>Ben Skowronek</td>
+    <td>35214463</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>1.28</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Xavier Hutchinson (35214465)</td>
+    <td>Xavier Hutchinson</td>
+    <td>35214465</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>1.49</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Johnny Johnson III (35214467)</td>
+    <td>Johnny Johnson III</td>
+    <td>35214467</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Steven Sims (35214471)</td>
+    <td>Steven Sims</td>
+    <td>35214471</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>2.9</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jared Wayne (35214473)</td>
+    <td>Jared Wayne</td>
+    <td>35214473</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kyric McGowan (35214247)</td>
+    <td>Kyric McGowan</td>
+    <td>35214247</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tim Jones (35214409)</td>
+    <td>Tim Jones</td>
+    <td>35214409</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>1.14</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Devin Duvernay (35214411)</td>
+    <td>Devin Duvernay</td>
+    <td>35214411</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0.49</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Elijah Cooks (35214413)</td>
+    <td>Elijah Cooks</td>
+    <td>35214413</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0.76</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Seth Williams (35214415)</td>
+    <td>Seth Williams</td>
+    <td>35214415</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Joshua Cephus (35214417)</td>
+    <td>Joshua Cephus</td>
+    <td>35214417</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Joseph Scates (35214419)</td>
+    <td>Joseph Scates</td>
+    <td>35214419</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Brevin Easton (35214421)</td>
+    <td>Brevin Easton</td>
+    <td>35214421</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Austin Trammell (35214423)</td>
+    <td>Austin Trammell</td>
+    <td>35214423</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0.35</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Denzel Mims (35214425)</td>
+    <td>Denzel Mims</td>
+    <td>35214425</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>David White Jr. (35214427)</td>
+    <td>David White Jr.</td>
+    <td>35214427</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Braxton Berrios (35214429)</td>
+    <td>Braxton Berrios</td>
+    <td>35214429</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>3.41</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>River Cracraft (35214431)</td>
+    <td>River Cracraft</td>
+    <td>35214431</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>2.94</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Malik Washington (35214433)</td>
+    <td>Malik Washington</td>
+    <td>35214433</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Erik Ezukanma (35214435)</td>
+    <td>Erik Ezukanma</td>
+    <td>35214435</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>1.1</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Braylon Sanders (35214437)</td>
+    <td>Braylon Sanders</td>
+    <td>35214437</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Anthony Schwartz (35214439)</td>
+    <td>Anthony Schwartz</td>
+    <td>35214439</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Je'Quan Burton (35214441)</td>
+    <td>Je'Quan Burton</td>
+    <td>35214441</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tahj Washington (35214443)</td>
+    <td>Tahj Washington</td>
+    <td>35214443</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jadon Janke (35214469)</td>
+    <td>Jadon Janke</td>
+    <td>35214469</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kevin Austin Jr. (35214245)</td>
+    <td>Kevin Austin Jr.</td>
+    <td>35214245</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Terrace Marshall Jr. (35214383)</td>
+    <td>Terrace Marshall Jr.</td>
+    <td>35214383</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>3.66</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ihmir Smith-Marsette (35214385)</td>
+    <td>Ihmir Smith-Marsette</td>
+    <td>35214385</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>1.91</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>David Moore (35214387)</td>
+    <td>David Moore</td>
+    <td>35214387</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>4.12</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Mike Strachan (35214389)</td>
+    <td>Mike Strachan</td>
+    <td>35214389</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>1.38</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Cam Sims (35214391)</td>
+    <td>Cam Sims</td>
+    <td>35214391</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen Coker (35214393)</td>
+    <td>Jalen Coker</td>
+    <td>35214393</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Sam Pinckney (35214395)</td>
+    <td>Sam Pinckney</td>
+    <td>35214395</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Equanimeous St. Brown (35214399)</td>
+    <td>Equanimeous St. Brown</td>
+    <td>35214399</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>1.6</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Bub Means (35214401)</td>
+    <td>Bub Means</td>
+    <td>35214401</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Stanley Morgan Jr. (35214403)</td>
+    <td>Stanley Morgan Jr.</td>
+    <td>35214403</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jermaine Jackson (35214405)</td>
+    <td>Jermaine Jackson</td>
+    <td>35214405</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Mason Tipton (35214407)</td>
+    <td>Mason Tipton</td>
+    <td>35214407</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Allen Robinson II (35214349)</td>
+    <td>Allen Robinson II</td>
+    <td>35214349</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>3.62</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Isaiah McKenzie (35214351)</td>
+    <td>Isaiah McKenzie</td>
+    <td>35214351</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>1.43</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Isaiah Hodgins (35214353)</td>
+    <td>Isaiah Hodgins</td>
+    <td>35214353</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>3.59</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Gunner Olszewski (35214355)</td>
+    <td>Gunner Olszewski</td>
+    <td>35214355</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0.42</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Miles Boykin (35214357)</td>
+    <td>Miles Boykin</td>
+    <td>35214357</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0.26</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ayir Asante (35214359)</td>
+    <td>Ayir Asante</td>
+    <td>35214359</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Bryce Ford-Wheaton (35214361)</td>
+    <td>Bryce Ford-Wheaton</td>
+    <td>35214361</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dennis Houston (35214363)</td>
+    <td>Dennis Houston</td>
+    <td>35214363</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>John Jiles (35214365)</td>
+    <td>John Jiles</td>
+    <td>35214365</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Chase Cota (35214367)</td>
+    <td>Chase Cota</td>
+    <td>35214367</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen Nailor (35214369)</td>
+    <td>Jalen Nailor</td>
+    <td>35214369</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0.98</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Lucky Jackson (35214371)</td>
+    <td>Lucky Jackson</td>
+    <td>35214371</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Trishton Jackson (35214373)</td>
+    <td>Trishton Jackson</td>
+    <td>35214373</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0.7</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Thayer Thomas (35214375)</td>
+    <td>Thayer Thomas</td>
+    <td>35214375</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Malik Knowles (35214377)</td>
+    <td>Malik Knowles</td>
+    <td>35214377</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ty James (35214379)</td>
+    <td>Ty James</td>
+    <td>35214379</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jeshaun Jones (35214381)</td>
+    <td>Jeshaun Jones</td>
+    <td>35214381</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Daniel Bellinger (35214697)</td>
+    <td>Daniel Bellinger</td>
+    <td>35214697</td>
+    <td>TE/FLEX</td>
+    <td>3000</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>2.97</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dax Milne (35214257)</td>
+    <td>Dax Milne</td>
+    <td>35214257</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Derius Davis (35214319)</td>
+    <td>Derius Davis</td>
+    <td>35214319</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>2.16</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Brenden Rice (35214321)</td>
+    <td>Brenden Rice</td>
+    <td>35214321</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Simi Fehoko (35214323)</td>
+    <td>Simi Fehoko</td>
+    <td>35214323</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>1.32</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Cornelius Johnson (35214325)</td>
+    <td>Cornelius Johnson</td>
+    <td>35214325</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jaelen Gill (35214327)</td>
+    <td>Jaelen Gill</td>
+    <td>35214327</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Leon Johnson (35214329)</td>
+    <td>Leon Johnson</td>
+    <td>35214329</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Praise Olatoke (35214331)</td>
+    <td>Praise Olatoke</td>
+    <td>35214331</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jaylen Johnson (35214333)</td>
+    <td>Jaylen Johnson</td>
+    <td>35214333</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen Guyton (35214335)</td>
+    <td>Jalen Guyton</td>
+    <td>35214335</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>3.11</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>DJ Turner (35214337)</td>
+    <td>DJ Turner</td>
+    <td>35214337</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kristian Wilkerson (35214339)</td>
+    <td>Kristian Wilkerson</td>
+    <td>35214339</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Alex Bachman (35214341)</td>
+    <td>Alex Bachman</td>
+    <td>35214341</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tulu Griffin (35214343)</td>
+    <td>Tulu Griffin</td>
+    <td>35214343</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jeff Foreman (35214345)</td>
+    <td>Jeff Foreman</td>
+    <td>35214345</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ramel Keyton (35214347)</td>
+    <td>Ramel Keyton</td>
+    <td>35214347</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Isaiah Wooden (35214595)</td>
+    <td>Isaiah Wooden</td>
+    <td>35214595</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Hayden Hurst (35214695)</td>
+    <td>Hayden Hurst</td>
+    <td>35214695</td>
+    <td>TE/FLEX</td>
+    <td>3000</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>4.71</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jake Bobo (35214289)</td>
+    <td>Jake Bobo</td>
+    <td>35214289</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>3.35</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dee Eskridge (35214291)</td>
+    <td>Dee Eskridge</td>
+    <td>35214291</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0.12</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dareke Young (35214293)</td>
+    <td>Dareke Young</td>
+    <td>35214293</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Easop Winston Jr. (35214295)</td>
+    <td>Easop Winston Jr.</td>
+    <td>35214295</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Cody White (35214297)</td>
+    <td>Cody White</td>
+    <td>35214297</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Hayden Hatten (35214299)</td>
+    <td>Hayden Hatten</td>
+    <td>35214299</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dee Williams (35214301)</td>
+    <td>Dee Williams</td>
+    <td>35214301</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Troy Franklin (35214303)</td>
+    <td>Troy Franklin</td>
+    <td>35214303</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Lil'Jordan Humphrey (35214305)</td>
+    <td>Lil'Jordan Humphrey</td>
+    <td>35214305</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>2.78</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Brandon Johnson (35214307)</td>
+    <td>Brandon Johnson</td>
+    <td>35214307</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>5.65</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Devaughn Vele (35214309)</td>
+    <td>Devaughn Vele</td>
+    <td>35214309</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jalen Virgil (35214311)</td>
+    <td>Jalen Virgil</td>
+    <td>35214311</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Phillip Dorsett II (35214313)</td>
+    <td>Phillip Dorsett II</td>
+    <td>35214313</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Michael Bandy (35214315)</td>
+    <td>Michael Bandy</td>
+    <td>35214315</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>David Sills V (35214317)</td>
+    <td>David Sills V</td>
+    <td>35214317</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Greg Dulcich (35214693)</td>
+    <td>Greg Dulcich</td>
+    <td>35214693</td>
+    <td>TE/FLEX</td>
+    <td>3000</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>2.75</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Dyami Brown (35214251)</td>
+    <td>Dyami Brown</td>
+    <td>35214251</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>2.06</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Olamide Zaccheaus (35214253)</td>
+    <td>Olamide Zaccheaus</td>
+    <td>35214253</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>2.22</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Jamison Crowder (35214255)</td>
+    <td>Jamison Crowder</td>
+    <td>35214255</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>2.17</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Mitchell Tinsley (35214259)</td>
+    <td>Mitchell Tinsley</td>
+    <td>35214259</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Davion Davis (35214263)</td>
+    <td>Davion Davis</td>
+    <td>35214263</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Brycen Tremayne (35214265)</td>
+    <td>Brycen Tremayne</td>
+    <td>35214265</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kazmeir Allen (35214267)</td>
+    <td>Kazmeir Allen</td>
+    <td>35214267</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Marcus Rosemy-Jacksaint (35214269)</td>
+    <td>Marcus Rosemy-Jacksaint</td>
+    <td>35214269</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Rakim Jarrett (35214271)</td>
+    <td>Rakim Jarrett</td>
+    <td>35214271</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Sterling Shepard (35214273)</td>
+    <td>Sterling Shepard</td>
+    <td>35214273</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>1.42</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Ryan Miller (35214275)</td>
+    <td>Ryan Miller</td>
+    <td>35214275</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Raleigh Webb (35214277)</td>
+    <td>Raleigh Webb</td>
+    <td>35214277</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Cephus Johnson III (35214279)</td>
+    <td>Cephus Johnson III</td>
+    <td>35214279</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Tanner Knue (35214281)</td>
+    <td>Tanner Knue</td>
+    <td>35214281</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Kameron Johnson (35214283)</td>
+    <td>Kameron Johnson</td>
+    <td>35214283</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Latreal Jones (35214285)</td>
+    <td>Latreal Jones</td>
+    <td>35214285</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>WR</td>
+    <td>Cody Thompson (35214287)</td>
+    <td>Cody Thompson</td>
+    <td>35214287</td>
+    <td>WR/FLEX</td>
+    <td>3000</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0.29</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Steelers  (35214946)</td>
+    <td>Steelers </td>
+    <td>35214946</td>
+    <td>DST</td>
+    <td>2900</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>8.11</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tanner Hudson (35214705)</td>
+    <td>Tanner Hudson</td>
+    <td>35214705</td>
+    <td>TE/FLEX</td>
+    <td>2900</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>6.68</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Kylen Granson (35214703)</td>
+    <td>Kylen Granson</td>
+    <td>35214703</td>
+    <td>TE/FLEX</td>
+    <td>2900</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>4.87</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Johnny Mundt (35214701)</td>
+    <td>Johnny Mundt</td>
+    <td>35214701</td>
+    <td>TE/FLEX</td>
+    <td>2900</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>2.36</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Chargers  (35214945)</td>
+    <td>Chargers </td>
+    <td>35214945</td>
+    <td>DST</td>
+    <td>2900</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>6.59</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Elijah Higgins (35214709)</td>
+    <td>Elijah Higgins</td>
+    <td>35214709</td>
+    <td>TE/FLEX</td>
+    <td>2800</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>3.3</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Titans  (35214948)</td>
+    <td>Titans </td>
+    <td>35214948</td>
+    <td>DST</td>
+    <td>2800</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>5.94</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Brevin Jordan (35214707)</td>
+    <td>Brevin Jordan</td>
+    <td>35214707</td>
+    <td>TE/FLEX</td>
+    <td>2800</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>4.09</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Raiders  (35214947)</td>
+    <td>Raiders </td>
+    <td>35214947</td>
+    <td>DST</td>
+    <td>2800</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>8.59</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Drew Sample (35214713)</td>
+    <td>Drew Sample</td>
+    <td>35214713</td>
+    <td>TE/FLEX</td>
+    <td>2700</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>2.96</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Texans  (35214950)</td>
+    <td>Texans </td>
+    <td>35214950</td>
+    <td>DST</td>
+    <td>2700</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>8.42</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Jaguars  (35214949)</td>
+    <td>Jaguars </td>
+    <td>35214949</td>
+    <td>DST</td>
+    <td>2700</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>7.06</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Ben Sinnott (35214711)</td>
+    <td>Ben Sinnott</td>
+    <td>35214711</td>
+    <td>TE/FLEX</td>
+    <td>2700</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Patriots  (35214952)</td>
+    <td>Patriots </td>
+    <td>35214952</td>
+    <td>DST</td>
+    <td>2600</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>6.47</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Colts  (35214951)</td>
+    <td>Colts </td>
+    <td>35214951</td>
+    <td>DST</td>
+    <td>2600</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>8.18</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Robert Tonyan (35214717)</td>
+    <td>Robert Tonyan</td>
+    <td>35214717</td>
+    <td>TE/FLEX</td>
+    <td>2600</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>1.31</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Lucas Krull (35214715)</td>
+    <td>Lucas Krull</td>
+    <td>35214715</td>
+    <td>TE/FLEX</td>
+    <td>2600</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>3.36</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Luke Schoonmaker (35214915)</td>
+    <td>Luke Schoonmaker</td>
+    <td>35214915</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>1.57</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Peyton Hendershot (35214917)</td>
+    <td>Peyton Hendershot</td>
+    <td>35214917</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0.87</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Brevyn Spann-Ford (35214919)</td>
+    <td>Brevyn Spann-Ford</td>
+    <td>35214919</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Princeton Fant (35214921)</td>
+    <td>Princeton Fant</td>
+    <td>35214921</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Alec Holler (35214923)</td>
+    <td>Alec Holler</td>
+    <td>35214923</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>DAL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jordan Akins (35214925)</td>
+    <td>Jordan Akins</td>
+    <td>35214925</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>1.57</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Giovanni Ricci (35214927)</td>
+    <td>Giovanni Ricci</td>
+    <td>35214927</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0.24</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Zaire Mitchell-Paden (35214929)</td>
+    <td>Zaire Mitchell-Paden</td>
+    <td>35214929</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Treyton Welch (35214931)</td>
+    <td>Treyton Welch</td>
+    <td>35214931</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DAL@CLE 09/08/2024 04:25PM ET</td>
+    <td>CLE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Darnell Washington (35214899)</td>
+    <td>Darnell Washington</td>
+    <td>35214899</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0.73</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Connor Heyward (35214901)</td>
+    <td>Connor Heyward</td>
+    <td>35214901</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>2.29</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>MyCole Pruitt (35214903)</td>
+    <td>MyCole Pruitt</td>
+    <td>35214903</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>1.53</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Rodney Williams (35214905)</td>
+    <td>Rodney Williams</td>
+    <td>35214905</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>PIT</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Charlie Woerner (35214907)</td>
+    <td>Charlie Woerner</td>
+    <td>35214907</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0.31</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>John FitzPatrick (35214909)</td>
+    <td>John FitzPatrick</td>
+    <td>35214909</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0.24</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Ross Dwelley (35214911)</td>
+    <td>Ross Dwelley</td>
+    <td>35214911</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0.18</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Austin Stogner (35214913)</td>
+    <td>Austin Stogner</td>
+    <td>35214913</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>PIT@ATL 09/08/2024 01:00PM ET</td>
+    <td>ATL</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tip Reiman (35214885)</td>
+    <td>Tip Reiman</td>
+    <td>35214885</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Travis Vokolek (35214887)</td>
+    <td>Travis Vokolek</td>
+    <td>35214887</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Blake Whiteheart (35214889)</td>
+    <td>Blake Whiteheart</td>
+    <td>35214889</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Bernhard Seikovits (35214891)</td>
+    <td>Bernhard Seikovits</td>
+    <td>35214891</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Quintin Morris (35214893)</td>
+    <td>Quintin Morris</td>
+    <td>35214893</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0.62</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tre' McKitty (35214895)</td>
+    <td>Tre' McKitty</td>
+    <td>35214895</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Zach Davidson (35214897)</td>
+    <td>Zach Davidson</td>
+    <td>35214897</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>BUF</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Josh Whyle (35214865)</td>
+    <td>Josh Whyle</td>
+    <td>35214865</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>2.22</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Nick Vannett (35214867)</td>
+    <td>Nick Vannett</td>
+    <td>35214867</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0.16</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Thomas Odukoya (35214869)</td>
+    <td>Thomas Odukoya</td>
+    <td>35214869</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>David Martin-Robinson (35214871)</td>
+    <td>David Martin-Robinson</td>
+    <td>35214871</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Steven Stilianos (35214873)</td>
+    <td>Steven Stilianos</td>
+    <td>35214873</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>TEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Marcedes Lewis (35214875)</td>
+    <td>Marcedes Lewis</td>
+    <td>35214875</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0.76</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Stephen Carlson (35214877)</td>
+    <td>Stephen Carlson</td>
+    <td>35214877</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tommy Sweeney (35214879)</td>
+    <td>Tommy Sweeney</td>
+    <td>35214879</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Brenden Bates (35214881)</td>
+    <td>Brenden Bates</td>
+    <td>35214881</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Patrick Scales (35214883)</td>
+    <td>Patrick Scales</td>
+    <td>35214883</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>TEN@CHI 09/08/2024 01:00PM ET</td>
+    <td>CHI</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Mitchell Wilcox (35214849)</td>
+    <td>Mitchell Wilcox</td>
+    <td>35214849</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0.91</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jaheim Bell (35214851)</td>
+    <td>Jaheim Bell</td>
+    <td>35214851</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>La'Michael Pettway (35214853)</td>
+    <td>La'Michael Pettway</td>
+    <td>35214853</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jacob Warren (35214855)</td>
+    <td>Jacob Warren</td>
+    <td>35214855</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>NE</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Erick All Jr. (35214857)</td>
+    <td>Erick All Jr.</td>
+    <td>35214857</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tanner McLachlan (35214859)</td>
+    <td>Tanner McLachlan</td>
+    <td>35214859</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Cam Grandy (35214861)</td>
+    <td>Cam Grandy</td>
+    <td>35214861</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Cal Adomitis (35214863)</td>
+    <td>Cal Adomitis</td>
+    <td>35214863</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>NE@CIN 09/08/2024 01:00PM ET</td>
+    <td>CIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Mo Alie-Cox (35214833)</td>
+    <td>Mo Alie-Cox</td>
+    <td>35214833</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>2.89</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Will Mallory (35214835)</td>
+    <td>Will Mallory</td>
+    <td>35214835</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>3.22</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Drew Ogletree (35214837)</td>
+    <td>Drew Ogletree</td>
+    <td>35214837</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>2.98</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Eric Tomlinson (35214839)</td>
+    <td>Eric Tomlinson</td>
+    <td>35214839</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jordan Murray (35214841)</td>
+    <td>Jordan Murray</td>
+    <td>35214841</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>IND</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Cade Stover (35214843)</td>
+    <td>Cade Stover</td>
+    <td>35214843</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Teagan Quitoriano (35214845)</td>
+    <td>Teagan Quitoriano</td>
+    <td>35214845</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0.76</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Dalton Keene (35214847)</td>
+    <td>Dalton Keene</td>
+    <td>35214847</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>HOU@IND 09/08/2024 01:00PM ET</td>
+    <td>HOU</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Luke Farrell (35214813)</td>
+    <td>Luke Farrell</td>
+    <td>35214813</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>1.68</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Brenton Strange (35214815)</td>
+    <td>Brenton Strange</td>
+    <td>35214815</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>1.04</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Josiah Deguara (35214817)</td>
+    <td>Josiah Deguara</td>
+    <td>35214817</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0.85</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Josh Pederson (35214819)</td>
+    <td>Josh Pederson</td>
+    <td>35214819</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Patrick Murtagh (35214821)</td>
+    <td>Patrick Murtagh</td>
+    <td>35214821</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Shawn Bowman (35214823)</td>
+    <td>Shawn Bowman</td>
+    <td>35214823</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>JAX</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Julian Hill (35214825)</td>
+    <td>Julian Hill</td>
+    <td>35214825</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0.61</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jody Fortson Jr. (35214827)</td>
+    <td>Jody Fortson Jr.</td>
+    <td>35214827</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tanner Conner (35214829)</td>
+    <td>Tanner Conner</td>
+    <td>35214829</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Hayden Rucci (35214831)</td>
+    <td>Hayden Rucci</td>
+    <td>35214831</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>JAX@MIA 09/08/2024 01:00PM ET</td>
+    <td>MIA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tommy Tremble (35214791)</td>
+    <td>Tommy Tremble</td>
+    <td>35214791</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>3.78</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Ja'Tavion Sanders (35214793)</td>
+    <td>Ja'Tavion Sanders</td>
+    <td>35214793</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Ian Thomas (35214795)</td>
+    <td>Ian Thomas</td>
+    <td>35214795</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0.88</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Stephen Sullivan (35214797)</td>
+    <td>Stephen Sullivan</td>
+    <td>35214797</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>2.23</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jordan Matthews (35214799)</td>
+    <td>Jordan Matthews</td>
+    <td>35214799</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Foster Moreau (35214801)</td>
+    <td>Foster Moreau</td>
+    <td>35214801</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>3.09</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jesper Horsted (35214803)</td>
+    <td>Jesper Horsted</td>
+    <td>35214803</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>0.11</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tommy Hudson (35214805)</td>
+    <td>Tommy Hudson</td>
+    <td>35214805</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Michael Jacobson (35214807)</td>
+    <td>Michael Jacobson</td>
+    <td>35214807</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Dallin Holker (35214809)</td>
+    <td>Dallin Holker</td>
+    <td>35214809</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Zach Wood (35214811)</td>
+    <td>Zach Wood</td>
+    <td>35214811</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>NO</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>N'Keal Harry (35214719)</td>
+    <td>N'Keal Harry</td>
+    <td>35214719</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Theo Johnson (35214773)</td>
+    <td>Theo Johnson</td>
+    <td>35214773</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jack Stoll (35214775)</td>
+    <td>Jack Stoll</td>
+    <td>35214775</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0.49</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Chris Manhertz (35214777)</td>
+    <td>Chris Manhertz</td>
+    <td>35214777</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0.22</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Lawrence Cager (35214779)</td>
+    <td>Lawrence Cager</td>
+    <td>35214779</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>1.24</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tyree Jackson (35214781)</td>
+    <td>Tyree Jackson</td>
+    <td>35214781</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>NYG</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Nick Muse (35214783)</td>
+    <td>Nick Muse</td>
+    <td>35214783</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>1.6</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Trey Knox (35214785)</td>
+    <td>Trey Knox</td>
+    <td>35214785</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Sammis Reyes (35214787)</td>
+    <td>Sammis Reyes</td>
+    <td>35214787</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Andrew DePaola (35214789)</td>
+    <td>Andrew DePaola</td>
+    <td>35214789</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>MIN@NYG 09/08/2024 01:00PM ET</td>
+    <td>MIN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Stone Smartt (35214759)</td>
+    <td>Stone Smartt</td>
+    <td>35214759</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>2.03</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Zach Heins (35214761)</td>
+    <td>Zach Heins</td>
+    <td>35214761</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Luke Benson (35214763)</td>
+    <td>Luke Benson</td>
+    <td>35214763</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LAC</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Harrison Bryant (35214765)</td>
+    <td>Harrison Bryant</td>
+    <td>35214765</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>2.74</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Zach Gentry (35214767)</td>
+    <td>Zach Gentry</td>
+    <td>35214767</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Cole Fotheringham (35214769)</td>
+    <td>Cole Fotheringham</td>
+    <td>35214769</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0.8</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>John Samuel Shenker (35214771)</td>
+    <td>John Samuel Shenker</td>
+    <td>35214771</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>LV@LAC 09/08/2024 04:05PM ET</td>
+    <td>LV</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Pharaoh Brown (35214743)</td>
+    <td>Pharaoh Brown</td>
+    <td>35214743</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>2.28</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>AJ Barner (35214745)</td>
+    <td>AJ Barner</td>
+    <td>35214745</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Brady Russell (35214747)</td>
+    <td>Brady Russell</td>
+    <td>35214747</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tyler Mabry (35214749)</td>
+    <td>Tyler Mabry</td>
+    <td>35214749</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Jack Westover (35214751)</td>
+    <td>Jack Westover</td>
+    <td>35214751</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>SEA</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Nate Adkins (35214753)</td>
+    <td>Nate Adkins</td>
+    <td>35214753</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0.62</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Thomas Yassmin (35214755)</td>
+    <td>Thomas Yassmin</td>
+    <td>35214755</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Mitchell Fraboni (35214757)</td>
+    <td>Mitchell Fraboni</td>
+    <td>35214757</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Broncos  (35214954)</td>
+    <td>Broncos </td>
+    <td>35214954</td>
+    <td>DST</td>
+    <td>2500</td>
+    <td>DEN@SEA 09/08/2024 04:05PM ET</td>
+    <td>DEN</td>
+    <td>6.88</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>John Bates (35214721)</td>
+    <td>John Bates</td>
+    <td>35214721</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>2.01</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Cole Turner (35214723)</td>
+    <td>Cole Turner</td>
+    <td>35214723</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>1.92</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Armani Rogers (35214725)</td>
+    <td>Armani Rogers</td>
+    <td>35214725</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Colson Yankoff (35214727)</td>
+    <td>Colson Yankoff</td>
+    <td>35214727</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tyler Ott (35214729)</td>
+    <td>Tyler Ott</td>
+    <td>35214729</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Ko Kieft (35214731)</td>
+    <td>Ko Kieft</td>
+    <td>35214731</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0.4</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Payne Durham (35214733)</td>
+    <td>Payne Durham</td>
+    <td>35214733</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0.91</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Devin Culp (35214735)</td>
+    <td>Devin Culp</td>
+    <td>35214735</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>David Wells (35214737)</td>
+    <td>David Wells</td>
+    <td>35214737</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0.2</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Tanner Taula (35214739)</td>
+    <td>Tanner Taula</td>
+    <td>35214739</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>TE</td>
+    <td>Evan Deckers (35214741)</td>
+    <td>Evan Deckers</td>
+    <td>35214741</td>
+    <td>TE/FLEX</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>TB</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Commanders  (35214953)</td>
+    <td>Commanders </td>
+    <td>35214953</td>
+    <td>DST</td>
+    <td>2500</td>
+    <td>WAS@TB 09/08/2024 04:25PM ET</td>
+    <td>WAS</td>
+    <td>3.41</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Cardinals  (35214956)</td>
+    <td>Cardinals </td>
+    <td>35214956</td>
+    <td>DST</td>
+    <td>2400</td>
+    <td>ARI@BUF 09/08/2024 01:00PM ET</td>
+    <td>ARI</td>
+    <td>3.82</td>
+</tr>
+<tr>
+    <td>DST</td>
+    <td>Panthers  (35214955)</td>
+    <td>Panthers </td>
+    <td>35214955</td>
+    <td>DST</td>
+    <td>2400</td>
+    <td>CAR@NO 09/08/2024 01:00PM ET</td>
+    <td>CAR</td>
+    <td>4.18</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
