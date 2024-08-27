@@ -3,118 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Data - opponent updated</title>
+    <title>Player Data - Optimizer Update Tuesday</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <style>
+        body {
+            display: flex; /* Use flexbox for the main layout */
+            height: 100vh; /* Full height of the viewport */
+            margin: 0; /* Remove default body margin */
+        }
+        #leftPanel {
+            width: 50%; /* Left panel for DataTable */
+            padding: 10px; /* Padding around the DataTable */
+            overflow-y: auto; /* Enable vertical overflow for scrolling if necessary */
+            border-right: 2px solid #ccc; /* Optional: border between panels */
+        }
+        #rightPanel {
+            width: 50%; /* Right panel for optimizer */
+            padding: 10px; /* Padding around the optimizer area */
+            overflow-y: auto; /* Enable vertical overflow for scrolling if necessary */
+            display: flex; /* Flexbox for layout */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: flex-start; /* Align items to the start */
+        }
         .greyed-out {
             background-color: #eaeaea; /* Light grey background */
             color: #aaa; /* Light grey text */
         }
+        #gamesDisplay {
+            display: flex; /* Use flexbox for horizontal display */
+            flex-wrap: wrap; /* Allow items to wrap */
+            overflow-x: auto; /* Allow horizontal scrolling if necessary */
+            margin-bottom: 20px; /* Space between games and table */
+            padding: 10px; /* Padding around games display */
+        }
+        .game {
+            display: flex;
+            flex-direction: column; /* Stack name and input vertically */
+            align-items: center; /* Center items */
+            margin: 5px;
+            padding: 10px; /* Padding inside each game box */
+            background-color: #444; /* Dark grey background for each game box */
+            color: white; /* White text for better contrast */
+            border-radius: 8px; /* Rounded corners for the boxes */
+            width: auto; /* Auto width to allow flexible sizing */
+            min-width: 100px; /* Minimum width to ensure usability */
+            box-sizing: border-box; /* Include padding in width calculation */
+            text-align: center; /* Center text for each game */
+        }
+        .projected-total {
+            margin-top: 5px; /* Space between game name and input */
+            width: 50px; /* Fixed width for input box (3 digits) */
+            padding: 5px; /* Padding inside input */
+            border: none; /* Remove default border */
+            border-radius: 4px; /* Rounded corners for input */
+        }
+        table {
+            width: 100%; /* Table width to take full available space */
+        }
+        .lineup {
+            margin-top: 20px; /* Space above lineup output */
+            padding: 10px;
+            border: 1px solid #000; /* Border for the lineup */
+            width: 100%;
+            border-radius: 5px;
+            background-color: #f9f9f9; /* Light grey background for lineup */
+        }
+        button {
+            margin: 5px; /* Space between buttons */
+        }
     </style>
 </head>
 <body>
-    <input type="file" id="fileInput" accept=".csv"/>
-    <table id="myTable" border="1">
-        <thead>
-            <tr>
-                <th>Action</th> <!-- New Action Column -->
-                <th>Position</th>
-                <th>Name + ID</th>
-                <th>Name</th>
-                <th>ID</th>
-                <th>Roster Position</th>
-                <th>Salary</th>
-                <th>Game Info</th>
-                <th>Team</th>
-                <th>Opponent</th>
-                <th>Avg Points Per Game</th>
-            </tr>
-            <tr>
-                <th></th> <!-- Empty header for Action Column -->
-                <th><input type="text" placeholder="Search Position" /></th>
-                <th><input type="text" placeholder="Search Name + ID" /></th>
-                <th><input type="text" placeholder="Search Name" /></th>
-                <th><input type="text" placeholder="Search ID" /></th>
-                <th><input type="text" placeholder="Search Roster Position" /></th>
-                <th><input type="text" placeholder="Search Salary" /></th>
-                <th><input type="text" placeholder="Search Game Info" /></th>
-                <th><input type="text" placeholder="Search Team" /></th>
-                <th><input type="text" placeholder="Search Opponent" /></th>
-                <th><input type="text" placeholder="Search Avg Points" /></th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Table body filled dynamically by CSV data -->
-        </tbody>
-    </table>
+    <div id="leftPanel">
+        <input type="file" id="fileInput" accept=".csv"/>
+
+        <div id="gamesDisplay"></div>
+
+        <table id="myTable" border="1">
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Position</th>
+                    <th>Name + ID</th>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Roster Position</th>
+                    <th>Salary</th>
+                    <th>Game Info</th>
+                    <th>Team</th>
+                    <th>Opponent</th>
+                    <th>Avg Points Per Game</th>
+                    <th>Own%</th>
+                    <th>Proj</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th><input type="text" placeholder="Search Position" /></th>
+                    <th><input type="text" placeholder="Search Name + ID" /></th>
+                    <th><input type="text" placeholder="Search Name" /></th>
+                    <th><input type="text" placeholder="Search ID" /></th>
+                    <th><input type="text" placeholder="Search Roster Position" /></th>
+                    <th><input type="text" placeholder="Search Salary" /></th>
+                    <th><input type="text" placeholder="Search Game Info" /></th>
+                    <th><input type="text" placeholder="Search Team" /></th>
+                    <th><input type="text" placeholder="Search Opponent" /></th>
+                    <th><input type="text" placeholder="Search Avg Points" /></th>
+                    <th><input type="text" placeholder="Search Own%" /></th>
+                    <th><input type="text" placeholder="Search Proj" /></th>
+                    <th><input type="text" placeholder="Search Value" /></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table body filled dynamically by CSV data -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="rightPanel">
+        <h2>Optimizer</h2>
+        <p>Generate your DraftKings lineup!</p>
+        <button id="generateLineupButton" style="margin-bottom: 10px;">Generate Lineup</button>
+        <button id="copyLineupButton" style="display:none; margin-bottom: 10px;">Copy Lineup to Clipboard</button> <!-- Button to copy lineup -->
+        <div id="generatedLineup" class="lineup"></div> <!-- Div to display generated lineup -->
+        <div id="lineupMessage"></div> <!-- Div for displaying messages -->
+    </div>
 
     <script>
         $(document).ready(function() {
             const table = $('#myTable').DataTable();
 
-            // Hide specified columns: Name + ID (2), ID (4), Roster Position (5), Game Info (7)
-            table.columns([2, 4, 5, 7]).visible(false); // Column indexing is zero-based
+            // Hide specified columns
+            table.columns([2, 4, 5, 7, 10]).visible(false); // Column indexing is zero-based
 
-            // Handle the file input
+            // Handle file input
             $('#fileInput').on('change', function(event) {
                 const file = event.target.files[0];
                 if (file) {
                     const reader = new FileReader();
                     reader.onload = function(e) {
-                        const csvData = e.target.result.split('\n').slice(1); // Skip the header
+                        const csvData = e.target.result.split('\n').slice(1); // Skip header
+                        const games = new Set(); // Using a Set to store unique games
+
+                        $('#gamesDisplay').empty(); // Clear previous games
+
                         csvData.forEach(line => {
                             const row = line.split(',').map(cell => cell.trim());
-
-                            // Check for the expected number of columns
-                            if (row.length >= 9) {
+                            if (row.length >= 12) {
                                 const gameInfo = row[6]; // Game Info
                                 const team = row[7]; // Team
                                 let opponent = '';
 
-                                // Extract the opponent from the game info if in the format "Team1@Team2"
                                 if (gameInfo) {
-                                    const teams = gameInfo.split(' ')[0]; // Take the part before the date
+                                    const teams = gameInfo.split(' ')[0];
                                     const teamNames = teams.split('@');
+
                                     if (teamNames.length === 2) {
-                                        opponent = teamNames[0] === team ? teamNames[1] : teamNames[0];
+                                        const awayTeam = teamNames[0];
+                                        const homeTeam = teamNames[1];
+                                        opponent = awayTeam === team ? homeTeam : awayTeam;
+                                        const gameString = `${awayTeam} vs ${homeTeam}`;
+                                        games.add(gameString);
                                     }
                                 }
 
-                                // Now we have a new row structure, add opponent before Avg Points column
-                                row.splice(8, 0, opponent); // Insert opponent at index 8
-                                const avgPoints = row.pop(); // Remove existing last element
-                                row.push(avgPoints); // Push Avg Points back
+                                row.splice(8, 0, opponent); // Insert opponent before Avg Points
+                                const avgPoints = row.pop(); // Remove Avg Points
+                                row.push(avgPoints); // Add Avg Points
+                                const value = row.pop(); // Pop value
+                                const proj = row.pop(); // Pop proj
+                                const own = row.pop(); // Pop own
+                                row.push(own, proj, value); // Add the new columns back to the row
 
-                                // Add checkbox at the beginning of the row
-                                row.unshift('<input type="checkbox" class="row-checkbox" checked />');
-                                
+                                // Add an action button to each player
+                                const actionButton = '<button class="include-player">Include</button>';
+                                row.unshift(actionButton); // Add action button
                                 table.row.add(row).draw();
                             }
+                        });
+
+                        // Display the games
+                        games.forEach(game => {
+                            $('#gamesDisplay').append(`
+                                <div class="game">
+                                    <span>${game}</span>
+                                    <input type="text" class="projected-total" maxlength="3" placeholder="Tot" />
+                                </div>
+                            `);
                         });
                     };
                     reader.readAsText(file);
                 }
             });
 
-            // Apply column-specific filtering
-            $('#myTable thead tr:eq(1) th input').each(function(index) {
-                $(this).on('keyup change', function() {
-                    if (table.column(index).search() !== this.value) {
-                        table.column(index).search(this.value).draw();
-                    }
-                });
+            // Toggle Inclusion/Exclusion of a Player
+            $('#myTable tbody').on('click', '.include-player', function() {
+                const $row = $(this).closest('tr');
+                const rowData = table.row($row).data();
+                const isSelected = $(this).text() === 'Exclude';
+                const newText = isSelected ? 'Include' : 'Exclude';
+
+                $(this).text(newText); // Toggle button text
+                $row.toggleClass('greyed-out', isSelected); // Toggle row styling based on selection
+                if (isSelected) {
+                    $row.find('.row-checkbox').prop('checked', false); // Ensure checkbox is unchecked if excluded
+                }
             });
 
-            // Handle checkbox change events
-            $('#myTable tbody').on('change', 'input.row-checkbox', function() {
-                const $row = $(this).closest('tr');
-                if (!$(this).is(':checked')) {
-                    $row.addClass('greyed-out'); // Grey out the row if unchecked
-                } else {
-                    $row.removeClass('greyed-out'); // Restore the original color if checked
+            // Lineup Generation Logic
+            $('#generateLineupButton').on('click', function() {
+                const selectedPlayers = [];
+                
+                // Collect selected players
+                $('#myTable tbody').find('button.include-player:contains("Exclude")').each(function() {
+                    const $row = $(this).closest('tr');
+                    const rowData = table.row($row).data();
+                    selectedPlayers.push({
+                        position: rowData[1],
+                        name: rowData[3],
+                        salary: parseFloat(rowData[6]), // parse salary to float
+                        exclude: false // Flag to track inclusion
+                    });
+                });
+
+                const lineup = {
+                    totalPlayers: 9,
+                    maxSalary: 50000,
+                    counts: {
+                        QB: 1,
+                        RB: 2,
+                        WR: 3,
+                        TE: 1,
+                        FLEX: 1, // RB/WR/TE
+                        DST: 1
+                    },
+                    selected: [],
+                    totalSalary: 0,
+                    errorMessage: ''
+                };
+
+                // Randomly select players while obeying restrictions
+                const takenPositions = { RB: 0, WR: 0, FLEX: 0 };
+
+                while (lineup.selected.length < lineup.totalPlayers) {
+                    const randomIndex = Math.floor(Math.random() * selectedPlayers.length);
+                    const player = selectedPlayers[randomIndex];
+
+                    if (lineup.counts[player.position] > 0 || 
+                        (player.position === 'RB' && takenPositions.RB < 2) || 
+                        (player.position === 'WR' && takenPositions.WR < 3)) {
+                        
+                        // Don't allow duplicates
+                        if (!lineup.selected.includes(player)) {
+                            lineup.selected.push(player);
+                            lineup.totalSalary += player.salary;
+
+                            // Update position counts
+                            switch (player.position) {
+                                case 'QB': lineup.counts.QB--; break;
+                                case 'RB': 
+                                    lineup.counts.RB--; 
+                                    takenPositions.RB++; 
+                                    break;
+                                case 'WR': 
+                                    lineup.counts.WR--; 
+                                    takenPositions.WR++; 
+                                    break;
+                                case 'TE': lineup.counts.TE--; break;
+                                case 'DST': lineup.counts.DST--; break;
+                            }
+                        }
+                    }
                 }
+
+                // Check if lineup exceeds salary cap or complies with selection
+                if (lineup.totalSalary > lineup.maxSalary) {
+                    lineup.errorMessage = `Total salary exceeds the maximum allowed ($${lineup.maxSalary}).`;
+                }
+
+                // Display lineup or error message
+                const $lineupDiv = $('#generatedLineup');
+                $lineupDiv.empty(); // Clear previous lineup
+
+                if (lineup.errorMessage) {
+                    $('#lineupMessage').text(lineup.errorMessage);
+                } else {
+                    // Format and display generated lineup
+                    $lineupDiv.append('<h3>Your DraftKings Lineup:</h3>');
+                    lineup.selected.forEach(player => {
+                        const playerEntry = `<div>${player.position}: ${player.name} - $${player.salary}</div>`;
+                        $lineupDiv.append(playerEntry);
+                    });
+                    $lineupDiv.append(`<strong>Total Salary: $${lineup.totalSalary}</strong>`);
+                    $('#copyLineupButton').show(); // Show copy button if lineup is generated
+                }
+            });
+
+            // Copy Lineup to Clipboard
+            $('#copyLineupButton').on('click', function() {
+                const lineup = $('#generatedLineup').text();
+                navigator.clipboard.writeText(lineup).then(() => {
+                    alert('Lineup copied to clipboard!');
+                }).catch(err => {
+                    alert('Failed to copy lineup: ', err);
+                });
             });
         });
     </script>
