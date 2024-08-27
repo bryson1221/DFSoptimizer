@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Data</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <style>
+        .greyed-out {
+            background-color: #eaeaea; /* Light grey background */
+            color: #aaa; /* Light grey text */
+        }
+    </style>
 </head>
 <body>
     <input type="file" id="fileInput" accept=".csv"/>
     <table id="myTable" border="1">
         <thead>
             <tr>
+                <th>Action</th> <!-- New Action Column -->
                 <th>Position</th>
                 <th>Name + ID</th>
                 <th>Name</th>
@@ -19,9 +28,11 @@
                 <th>Salary</th>
                 <th>Game Info</th>
                 <th>Team</th>
+                <th>Opponent</th>
                 <th>Avg Points Per Game</th>
             </tr>
             <tr>
+                <th></th> <!-- Empty header for Action Column -->
                 <th><input type="text" placeholder="Search Position" /></th>
                 <th><input type="text" placeholder="Search Name + ID" /></th>
                 <th><input type="text" placeholder="Search Name" /></th>
@@ -30,6 +41,7 @@
                 <th><input type="text" placeholder="Search Salary" /></th>
                 <th><input type="text" placeholder="Search Game Info" /></th>
                 <th><input type="text" placeholder="Search Team" /></th>
+                <th><input type="text" placeholder="Search Opponent" /></th>
                 <th><input type="text" placeholder="Search Avg Points" /></th>
             </tr>
         </thead>
@@ -42,6 +54,9 @@
         $(document).ready(function() {
             const table = $('#myTable').DataTable();
 
+            // Hide specified columns: Name + ID (1), ID (3), Roster Position (4), Game Info (6)
+            table.columns([1, 3, 4, 6]).visible(false); // Column indexing is zero-based
+
             // Handle the file input
             $('#fileInput').on('change', function(event) {
                 const file = event.target.files[0];
@@ -51,13 +66,30 @@
                         const csvData = e.target.result.split('\n').slice(1); // Skip the header
                         csvData.forEach(line => {
                             const row = line.split(',').map(cell => cell.trim());
-                            
-                            // Ensuring we have exactly 9 columns
-                            while (row.length < 9) {
-                                row.push('');
-                            }
 
-                            if (row.filter(cell => cell).length > 0) {
+                            // Check for the expected number of columns
+                            if (row.length >= 9) {
+                                const gameInfo = row[6]; // Game Info
+                                const team = row[7]; // Team
+                                let opponent = '';
+
+                                // Extract the opponent from the game info if in the format "Team1@Team2"
+                                if (gameInfo) {
+                                    const teams = gameInfo.split(' ')[0]; // Take the part before the date
+                                    const teamNames = teams.split('@');
+                                    if (teamNames.length === 2) {
+                                        opponent = teamNames[0] === team ? teamNames[1] : teamNames[0];
+                                    }
+                                }
+
+                                // Now we have a new row structure, add opponent before Avg Points column
+                                row.splice(8, 0, opponent); // Insert opponent at index 8
+                                const avgPoints = row.pop(); // Remove existing last element
+                                row.push(avgPoints); // Push Avg Points back
+
+                                // Add checkbox at the beginning of the row
+                                row.unshift('<input type="checkbox" class="row-checkbox" checked />');
+                                
                                 table.row.add(row).draw();
                             }
                         });
@@ -70,12 +102,19 @@
             $('#myTable thead tr:eq(1) th input').each(function(index) {
                 $(this).on('keyup change', function() {
                     if (table.column(index).search() !== this.value) {
-                        table
-                            .column(index)
-                            .search(this.value)
-                            .draw();
+                        table.column(index).search(this.value).draw();
                     }
                 });
+            });
+
+            // Handle checkbox change events
+            $('#myTable tbody').on('change', 'input.row-checkbox', function() {
+                const $row = $(this).closest('tr');
+                if (!$(this).is(':checked')) {
+                    $row.addClass('greyed-out'); // Grey out the row if unchecked
+                } else {
+                    $row.removeClass('greyed-out'); // Restore the original color if checked
+                }
             });
         });
     </script>
