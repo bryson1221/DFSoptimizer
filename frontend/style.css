@@ -6,9 +6,11 @@ table {
 }
 
 th, td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
+    max-width: 100px; /* Set a maximum width for table columns */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px; /* Reduced padding for smaller columns */
 }
 
 th {
@@ -18,4 +20,18 @@ th {
 
 tr:hover {
     background-color: #f1f1f1; /* Highlight rows on hover */
+}
+
+/* Tabs style */
+.tabs {
+    margin-bottom: 10px;
+}
+.tab {
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.active-tab {
+    background-color: #007bff;
+    color: white;
 }

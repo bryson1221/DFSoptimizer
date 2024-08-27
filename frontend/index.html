@@ -3,83 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Data - Optimizer Update Tuesday</title>
+    <title>Player Data - Optimizer</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <style>
         body {
-            display: flex; /* Use flexbox for the main layout */
-            height: 100vh; /* Full height of the viewport */
-            margin: 0; /* Remove default body margin */
+            display: flex;
+            height: 100vh;
+            margin: 0;
         }
         #leftPanel {
-            width: 50%; /* Left panel for DataTable */
-            padding: 10px; /* Padding around the DataTable */
-            overflow-y: auto; /* Enable vertical overflow for scrolling if necessary */
-            border-right: 2px solid #ccc; /* Optional: border between panels */
+            width: 50%;
+            padding: 10px;
+            overflow-y: auto;
+            border-right: 2px solid #ccc;
         }
         #rightPanel {
-            width: 50%; /* Right panel for optimizer */
-            padding: 10px; /* Padding around the optimizer area */
-            overflow-y: auto; /* Enable vertical overflow for scrolling if necessary */
-            display: flex; /* Flexbox for layout */
-            flex-direction: column; /* Stack elements vertically */
-            align-items: flex-start; /* Align items to the start */
-        }
-        .greyed-out {
-            background-color: #eaeaea; /* Light grey background */
-            color: #aaa; /* Light grey text */
-        }
-        #gamesDisplay {
-            display: flex; /* Use flexbox for horizontal display */
-            flex-wrap: wrap; /* Allow items to wrap */
-            overflow-x: auto; /* Allow horizontal scrolling if necessary */
-            margin-bottom: 20px; /* Space between games and table */
-            padding: 10px; /* Padding around games display */
-        }
-        .game {
-            display: flex;
-            flex-direction: column; /* Stack name and input vertically */
-            align-items: center; /* Center items */
-            margin: 5px;
-            padding: 10px; /* Padding inside each game box */
-            background-color: #444; /* Dark grey background for each game box */
-            color: white; /* White text for better contrast */
-            border-radius: 8px; /* Rounded corners for the boxes */
-            width: auto; /* Auto width to allow flexible sizing */
-            min-width: 100px; /* Minimum width to ensure usability */
-            box-sizing: border-box; /* Include padding in width calculation */
-            text-align: center; /* Center text for each game */
-        }
-        .projected-total {
-            margin-top: 5px; /* Space between game name and input */
-            width: 50px; /* Fixed width for input box (3 digits) */
-            padding: 5px; /* Padding inside input */
-            border: none; /* Remove default border */
-            border-radius: 4px; /* Rounded corners for input */
-        }
-        table {
-            width: 100%; /* Table width to take full available space */
-        }
-        .lineup {
-            margin-top: 20px; /* Space above lineup output */
+            width: 50%;
             padding: 10px;
-            border: 1px solid #000; /* Border for the lineup */
-            width: 100%;
-            border-radius: 5px;
-            background-color: #f9f9f9; /* Light grey background for lineup */
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
-        button {
-            margin: 5px; /* Space between buttons */
+        /* Other existing styles... */
+        
+        /* Updated CSS for table columns */
+        th, td {
+            max-width: 100px; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 5px; 
+        }
+
+        /* Tabs style */
+        .tabs {
+            margin-bottom: 10px;
+        }
+        .tab {
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .active-tab {
+            background-color: #007bff;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div id="leftPanel">
         <input type="file" id="fileInput" accept=".csv"/>
-
         <div id="gamesDisplay"></div>
+        
+        <!-- Include/Exclude buttons -->
+        <button id="includeAllButton">Include All</button>
+        <button id="excludeAllButton">Exclude All</button>
+
+        <!-- Player Filter Tabs -->
+        <div class="tabs">
+            <button class="tab active-tab" data-filter="ALL">All</button>
+            <button class="tab" data-filter="EXCLUDED">Excluded Players</button>
+            <button class="tab" data-filter="QB">QB</button>
+            <button class="tab" data-filter="RB">RB</button>
+            <button class="tab" data-filter="WR">WR</button>
+            <button class="tab" data-filter="TE">TE</button>
+            <button class="tab" data-filter="FLEX">FLEX</button>
+            <button class="tab" data-filter="DST">DST</button>
+        </div>
 
         <table id="myTable" border="1">
             <thead>
@@ -99,25 +92,24 @@
                     <th>Proj</th>
                     <th>Value</th>
                 </tr>
+            </thead>
+            <tbody>
+                <!-- Table body will be filled dynamically by CSV data -->
+            </tbody>
+        </table>
+        
+        <!-- Excluded Players Table -->
+        <h3>Excluded Players</h3>
+        <table id="excludedTable" border="1">
+            <thead>
                 <tr>
-                    <th></th>
-                    <th><input type="text" placeholder="Search Position" /></th>
-                    <th><input type="text" placeholder="Search Name + ID" /></th>
-                    <th><input type="text" placeholder="Search Name" /></th>
-                    <th><input type="text" placeholder="Search ID" /></th>
-                    <th><input type="text" placeholder="Search Roster Position" /></th>
-                    <th><input type="text" placeholder="Search Salary" /></th>
-                    <th><input type="text" placeholder="Search Game Info" /></th>
-                    <th><input type="text" placeholder="Search Team" /></th>
-                    <th><input type="text" placeholder="Search Opponent" /></th>
-                    <th><input type="text" placeholder="Search Avg Points" /></th>
-                    <th><input type="text" placeholder="Search Own%" /></th>
-                    <th><input type="text" placeholder="Search Proj" /></th>
-                    <th><input type="text" placeholder="Search Value" /></th>
+                    <th>Position</th>
+                    <th>Name</th>
+                    <th>Salary</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Table body filled dynamically by CSV data -->
+                <!-- Excluded players will be added here -->
             </tbody>
         </table>
     </div>
@@ -126,17 +118,19 @@
         <h2>Optimizer</h2>
         <p>Generate your DraftKings lineup!</p>
         <button id="generateLineupButton" style="margin-bottom: 10px;">Generate Lineup</button>
-        <button id="copyLineupButton" style="display:none; margin-bottom: 10px;">Copy Lineup to Clipboard</button> <!-- Button to copy lineup -->
-        <div id="generatedLineup" class="lineup"></div> <!-- Div to display generated lineup -->
-        <div id="lineupMessage"></div> <!-- Div for displaying messages -->
+        <button id="copyLineupButton" style="display:none; margin-bottom: 10px;">Copy Lineup to Clipboard</button>
+        <div id="generatedLineup" class="lineup"></div>
+        <div id="lineupMessage"></div>
     </div>
 
     <script>
         $(document).ready(function() {
             const table = $('#myTable').DataTable();
-
-            // Hide specified columns
-            table.columns([2, 4, 5, 7, 10]).visible(false); // Column indexing is zero-based
+            const excludedTable = $('#excludedTable').DataTable({
+                "bPaginate": false,  // Disable pagination
+                "bInfo": false,      // Disable table information
+                "bFilter": false     // Disable filtering
+            });
 
             // Handle file input
             $('#fileInput').on('change', function(event) {
@@ -144,47 +138,42 @@
                 if (file) {
                     const reader = new FileReader();
                     reader.onload = function(e) {
-                        const csvData = e.target.result.split('\n').slice(1); // Skip header
-                        const games = new Set(); // Using a Set to store unique games
+                        const csvData = e.target.result.split('\n').slice(1); 
+                        const games = new Set();
 
-                        $('#gamesDisplay').empty(); // Clear previous games
+                        $('#gamesDisplay').empty(); 
 
                         csvData.forEach(line => {
                             const row = line.split(',').map(cell => cell.trim());
                             if (row.length >= 12) {
-                                const gameInfo = row[6]; // Game Info
-                                const team = row[7]; // Team
+                                const gameInfo = row[6]; 
+                                const team = row[7]; 
                                 let opponent = '';
 
                                 if (gameInfo) {
-                                    const teams = gameInfo.split(' ')[0];
-                                    const teamNames = teams.split('@');
-
-                                    if (teamNames.length === 2) {
-                                        const awayTeam = teamNames[0];
-                                        const homeTeam = teamNames[1];
+                                    const teams = gameInfo.split(' ')[0].split('@');
+                                    if (teams.length === 2) {
+                                        const awayTeam = teams[0];
+                                        const homeTeam = teams[1];
                                         opponent = awayTeam === team ? homeTeam : awayTeam;
                                         const gameString = `${awayTeam} vs ${homeTeam}`;
                                         games.add(gameString);
                                     }
                                 }
 
-                                row.splice(8, 0, opponent); // Insert opponent before Avg Points
-                                const avgPoints = row.pop(); // Remove Avg Points
-                                row.push(avgPoints); // Add Avg Points
-                                const value = row.pop(); // Pop value
-                                const proj = row.pop(); // Pop proj
-                                const own = row.pop(); // Pop own
-                                row.push(own, proj, value); // Add the new columns back to the row
-
-                                // Add an action button to each player
-                                const actionButton = '<button class="include-player">Include</button>';
-                                row.unshift(actionButton); // Add action button
+                                row.splice(8, 0, opponent); 
+                                const avgPoints = row.pop(); 
+                                row.push(avgPoints); 
+                                const value = row.pop(); 
+                                const proj = row.pop(); 
+                                const own = row.pop(); 
+                                row.push(own, proj, value); 
+                                const actionButton = '<button class="include-player">Exclude</button>';
+                                row.unshift(actionButton);
                                 table.row.add(row).draw();
                             }
                         });
 
-                        // Display the games
                         games.forEach(game => {
                             $('#gamesDisplay').append(`
                                 <div class="game">
@@ -202,33 +191,75 @@
             $('#myTable tbody').on('click', '.include-player', function() {
                 const $row = $(this).closest('tr');
                 const rowData = table.row($row).data();
-                const isSelected = $(this).text() === 'Exclude';
-                const newText = isSelected ? 'Include' : 'Exclude';
+                
+                // Exclude player
+                if ($(this).text() === 'Exclude') {
+                    table.row($row).remove().draw();
 
-                $(this).text(newText); // Toggle button text
-                $row.toggleClass('greyed-out', isSelected); // Toggle row styling based on selection
-                if (isSelected) {
-                    $row.find('.row-checkbox').prop('checked', false); // Ensure checkbox is unchecked if excluded
+                    // Add to excluded players table
+                    excludedTable.row.add([
+                        rowData[1], // Position
+                        rowData[3], // Name
+                        rowData[6]  // Salary
+                    ]).draw();
+
+                    $(this).text('Include'); // Change button text in excluded players to 'Include'
+                } else {
+                    // Include player back to main table
+                    excludedTable.row($row).remove().draw();
+                    table.row.add(rowData).draw();
+                    $(this).text('Exclude'); // Change button text in main table back to 'Exclude'
                 }
             });
 
+            // Tab functionality to filter players
+            $('.tab').on('click', function() {
+                const filter = $(this).data('filter');
+                $('.tab').removeClass('active-tab'); 
+                $(this).addClass('active-tab'); 
+                filterPlayers(filter);
+            });
+
+            function filterPlayers(position) {
+                $('#myTable tbody tr').show(); 
+                $('#excludedTable tbody tr').hide(); // Hide excluded players initially
+                
+                // Show excluded players when tab is clicked
+                if (position === 'EXCLUDED') {
+                    $('#excludedTable').show(); // Show excluded players
+                    $('#myTable').hide(); // Hide included players
+                } else {
+                    $('#excludedTable').hide(); // Hide excluded players
+                    if (position !== 'ALL') {
+                        $('#myTable tbody tr').filter(function() {
+                            return $(this).find('td').eq(1).text() !== position; // Filter function
+                        }).hide(); 
+                    }
+                }
+            }
+
+            // Initially hide excluded players table
+            $('#excludedTable').hide();
+            filterPlayers('ALL'); // Start with showing all players
+            
             // Lineup Generation Logic
             $('#generateLineupButton').on('click', function() {
                 const selectedPlayers = [];
-                
-                // Collect selected players
-                $('#myTable tbody').find('button.include-player:contains("Exclude")').each(function() {
+
+                $('#myTable tbody').find('button.include-player:contains("Include")').each(function() {
                     const $row = $(this).closest('tr');
                     const rowData = table.row($row).data();
                     selectedPlayers.push({
                         position: rowData[1],
                         name: rowData[3],
-                        salary: parseFloat(rowData[6]), // parse salary to float
-                        exclude: false // Flag to track inclusion
+                        salary: parseFloat(rowData[6]),
+                        rosterPosition: rowData[5]
                     });
                 });
 
-                const lineup = {
+                console.log("Selected Players: ", selectedPlayers); 
+
+                const lineupConstraints = {
                     totalPlayers: 9,
                     maxSalary: 50000,
                     counts: {
@@ -236,69 +267,65 @@
                         RB: 2,
                         WR: 3,
                         TE: 1,
-                        FLEX: 1, // RB/WR/TE
-                        DST: 1
+                        DST: 1,
+                        FLEX: 1
                     },
                     selected: [],
                     totalSalary: 0,
-                    errorMessage: ''
                 };
 
-                // Randomly select players while obeying restrictions
-                const takenPositions = { RB: 0, WR: 0, FLEX: 0 };
+                let attempts = 0;
+                const maxAttempts = 10000; 
 
-                while (lineup.selected.length < lineup.totalPlayers) {
+                while (lineupConstraints.selected.length < lineupConstraints.totalPlayers && attempts < maxAttempts) {
                     const randomIndex = Math.floor(Math.random() * selectedPlayers.length);
                     const player = selectedPlayers[randomIndex];
 
-                    if (lineup.counts[player.position] > 0 || 
-                        (player.position === 'RB' && takenPositions.RB < 2) || 
-                        (player.position === 'WR' && takenPositions.WR < 3)) {
-                        
-                        // Don't allow duplicates
-                        if (!lineup.selected.includes(player)) {
-                            lineup.selected.push(player);
-                            lineup.totalSalary += player.salary;
+                    if (!player) continue; 
 
-                            // Update position counts
-                            switch (player.position) {
-                                case 'QB': lineup.counts.QB--; break;
-                                case 'RB': 
-                                    lineup.counts.RB--; 
-                                    takenPositions.RB++; 
-                                    break;
-                                case 'WR': 
-                                    lineup.counts.WR--; 
-                                    takenPositions.WR++; 
-                                    break;
-                                case 'TE': lineup.counts.TE--; break;
-                                case 'DST': lineup.counts.DST--; break;
-                            }
+                    const canAddPlayer = lineupConstraints.totalSalary + player.salary <= lineupConstraints.maxSalary &&
+                        (lineupConstraints.counts[player.position] > 0 ||
+                            (['RB', 'WR', 'TE'].includes(player.position) && lineupConstraints.counts.FLEX > 0));
+
+                    if (canAddPlayer) {
+                        lineupConstraints.selected.push(player);
+                        lineupConstraints.totalSalary += player.salary;
+
+                        if (lineupConstraints.counts[player.position] > 0) {
+                            lineupConstraints.counts[player.position]--;
+                        } else if (['RB', 'WR', 'TE'].includes(player.position)) {
+                            lineupConstraints.counts.FLEX--;
                         }
                     }
+                    attempts++; 
                 }
 
-                // Check if lineup exceeds salary cap or complies with selection
-                if (lineup.totalSalary > lineup.maxSalary) {
-                    lineup.errorMessage = `Total salary exceeds the maximum allowed ($${lineup.maxSalary}).`;
+                const isValidLineup = lineupConstraints.selected.length === lineupConstraints.totalPlayers &&
+                                      lineupConstraints.totalSalary <= lineupConstraints.maxSalary &&
+                                      lineupConstraints.counts.QB === 0 &&
+                                      lineupConstraints.counts.RB === 0 &&
+                                      lineupConstraints.counts.WR === 0 &&
+                                      lineupConstraints.counts.TE === 0 &&
+                                      lineupConstraints.counts.DST === 0 &&
+                                      lineupConstraints.counts.FLEX === 0;
+
+                if (!isValidLineup) {
+                    $('#lineupMessage').text(`Unable to generate a valid lineup after ${attempts} attempts. Please ensure there are enough players of each type.`);
+                    console.log("Final Position Counts:", lineupConstraints.counts); 
+                    console.log("Selected Players after attempts:", lineupConstraints.selected);
+                    return;
                 }
 
-                // Display lineup or error message
                 const $lineupDiv = $('#generatedLineup');
-                $lineupDiv.empty(); // Clear previous lineup
+                $lineupDiv.empty().append('<h3>Your DraftKings Lineup:</h3>');
+                lineupConstraints.selected.forEach(player => {
+                    const playerEntry = `<div>${player.position}: ${player.name} - $${player.salary}</div>`;
+                    $lineupDiv.append(playerEntry);
+                });
 
-                if (lineup.errorMessage) {
-                    $('#lineupMessage').text(lineup.errorMessage);
-                } else {
-                    // Format and display generated lineup
-                    $lineupDiv.append('<h3>Your DraftKings Lineup:</h3>');
-                    lineup.selected.forEach(player => {
-                        const playerEntry = `<div>${player.position}: ${player.name} - $${player.salary}</div>`;
-                        $lineupDiv.append(playerEntry);
-                    });
-                    $lineupDiv.append(`<strong>Total Salary: $${lineup.totalSalary}</strong>`);
-                    $('#copyLineupButton').show(); // Show copy button if lineup is generated
-                }
+                $lineupDiv.append(`<strong>Total Salary: $${lineupConstraints.totalSalary}</strong>`);
+                $('#copyLineupButton').show();
+                $('#lineupMessage').text('');
             });
 
             // Copy Lineup to Clipboard
